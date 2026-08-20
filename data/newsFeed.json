@@ -1,0 +1,100 @@
+[
+  {
+    "id": "N-01",
+    "headline": "RBI holds repo at 5.50%; signals data-dependent path into FY27",
+    "source": "RBI Press",
+    "timestamp": "2026-08-20T11:05:00+05:30",
+    "relatedIsin": null
+  },
+  {
+    "id": "N-02",
+    "headline": "10-year G-Sec eases 4bp after stronger-than-expected auction tail",
+    "source": "CCIL",
+    "timestamp": "2026-08-20T10:22:00+05:30",
+    "relatedIsin": "IN0020230061"
+  },
+  {
+    "id": "N-03",
+    "headline": "REC prices ₹4,500 cr tap of 2031 NCD inside secondary curve",
+    "source": "NSE",
+    "timestamp": "2026-08-19T16:40:00+05:30",
+    "relatedIsin": "INE020B08BH6"
+  },
+  {
+    "id": "N-04",
+    "headline": "CRISIL reaffirms NHAI at AAA/Stable; leverage watch on Bharatmala SPVs",
+    "source": "CRISIL",
+    "timestamp": "2026-08-19T09:15:00+05:30",
+    "relatedIsin": "INE906B07HC3"
+  },
+  {
+    "id": "N-05",
+    "headline": "ICICI AT1s offered 18bp wider as call date enters 7-month window",
+    "source": "Broker desk",
+    "timestamp": "2026-08-18T14:08:00+05:30",
+    "relatedIsin": "INE090A08AT1"
+  },
+  {
+    "id": "N-06",
+    "headline": "USD/INR prints 83.92; importer hedges lift near-term T-Bill demand",
+    "source": "FBIL",
+    "timestamp": "2026-08-18T12:30:00+05:30",
+    "relatedIsin": "IN0020260925"
+  },
+  {
+    "id": "N-07",
+    "headline": "Maharashtra SDL 2036 cheapens 6bp vs Gujarat comparable",
+    "source": "State loan desk",
+    "timestamp": "2026-08-17T15:44:00+05:30",
+    "relatedIsin": "IN2220260014"
+  },
+  {
+    "id": "N-08",
+    "headline": "PFC 2029s bid after power-sector disbursement print",
+    "source": "Economic Times",
+    "timestamp": "2026-08-17T09:50:00+05:30",
+    "relatedIsin": "INE134E08JS8"
+  },
+  {
+    "id": "N-09",
+    "headline": "India Ratings revises Tata Steel CP outlook to Negative on spread compression",
+    "source": "India Ratings",
+    "timestamp": "2026-08-16T18:12:00+05:30",
+    "relatedIsin": "INE047A14CP3"
+  },
+  {
+    "id": "N-10",
+    "headline": "IRFC 2030 finds real-money bid; railway capex bill cleared in Rajya Sabha",
+    "source": "Mint",
+    "timestamp": "2026-08-15T11:27:00+05:30",
+    "relatedIsin": "INE053F07AA1"
+  },
+  {
+    "id": "N-11",
+    "headline": "SBI Tier-2 2033s tighten 5bp on stronger CET1 disclosure",
+    "source": "Bloomberg",
+    "timestamp": "2026-08-14T13:03:00+05:30",
+    "relatedIsin": "INE062A08PQ2"
+  },
+  {
+    "id": "N-12",
+    "headline": "SEBI consults on T+1 settlement for corporate debt; street flags CD/CP ops",
+    "source": "SEBI",
+    "timestamp": "2026-08-13T17:55:00+05:30",
+    "relatedIsin": "INE001A14CD8"
+  },
+  {
+    "id": "N-13",
+    "headline": "Reliance 2028s supported as Jio capex guidance is marked unchanged",
+    "source": "CNBC-TV18",
+    "timestamp": "2026-08-12T10:16:00+05:30",
+    "relatedIsin": "INE002A08CD4"
+  },
+  {
+    "id": "N-14",
+    "headline": "HUDCO tap rumoured for September; housing bonds offered 3bp back",
+    "source": "Desk rumour",
+    "timestamp": "2026-08-11T16:01:00+05:30",
+    "relatedIsin": "INE031A07AB2"
+  }
+]

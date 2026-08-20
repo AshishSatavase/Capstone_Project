@@ -1,0 +1,58 @@
+[
+  {
+    "id": "IPO-01",
+    "issuerName": "NHAI",
+    "instrumentType": "NCD",
+    "couponRate": 7.55,
+    "tenorLabel": "10Y",
+    "issueSize": 5000,
+    "minLotSize": 1,
+    "faceValue": 1000,
+    "subscriptionOpen": "2026-08-25",
+    "subscriptionClose": "2026-08-28",
+    "priceBand": "₹1,000 (par)",
+    "status": "Upcoming"
+  },
+  {
+    "id": "IPO-02",
+    "issuerName": "REC Limited",
+    "instrumentType": "NCD",
+    "couponRate": 7.4,
+    "tenorLabel": "5Y",
+    "issueSize": 3000,
+    "minLotSize": 1,
+    "faceValue": 1000,
+    "subscriptionOpen": "2026-08-21",
+    "subscriptionClose": "2026-08-26",
+    "priceBand": "₹990 – ₹1,000",
+    "status": "Open"
+  },
+  {
+    "id": "IPO-03",
+    "issuerName": "State of Karnataka",
+    "instrumentType": "SDL",
+    "couponRate": 7.3,
+    "tenorLabel": "15Y",
+    "issueSize": 2000,
+    "minLotSize": 100,
+    "faceValue": 100,
+    "subscriptionOpen": "2026-08-27",
+    "subscriptionClose": "2026-08-27",
+    "priceBand": "Auction",
+    "status": "Upcoming"
+  },
+  {
+    "id": "IPO-04",
+    "issuerName": "HDFC Bank Ltd",
+    "instrumentType": "AT1",
+    "couponRate": 8.65,
+    "tenorLabel": "Perp NC5",
+    "issueSize": 4000,
+    "minLotSize": 1,
+    "faceValue": 10000000,
+    "subscriptionOpen": "2026-09-02",
+    "subscriptionClose": "2026-09-04",
+    "priceBand": "₹1 Cr (par)",
+    "status": "Upcoming"
+  }
+]

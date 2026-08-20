@@ -1,0 +1,173 @@
+[
+  {
+    "clientId": "CLT-1001",
+    "asOf": "2026-08-20",
+    "holdings": [
+      {
+        "isin": "IN0020230061",
+        "quantity": 50000,
+        "averageCostPrice": 99.4,
+        "purchaseDate": "2024-11-12",
+        "costingMethod": "Weighted Average",
+        "lots": [
+          {
+            "quantity": 30000,
+            "price": 98.85,
+            "date": "2024-11-12"
+          },
+          {
+            "quantity": 20000,
+            "price": 100.22,
+            "date": "2025-06-18"
+          }
+        ]
+      },
+      {
+        "isin": "IN0020240038",
+        "quantity": 25000,
+        "averageCostPrice": 101.2,
+        "purchaseDate": "2025-01-09",
+        "costingMethod": "Weighted Average",
+        "lots": [
+          {
+            "quantity": 15000,
+            "price": 100.5,
+            "date": "2025-01-09"
+          },
+          {
+            "quantity": 10000,
+            "price": 102.25,
+            "date": "2026-02-04"
+          }
+        ]
+      },
+      {
+        "isin": "INE020B08BH6",
+        "quantity": 8000,
+        "averageCostPrice": 100.1,
+        "purchaseDate": "2023-10-05",
+        "costingMethod": "FIFO",
+        "lots": [
+          {
+            "quantity": 5000,
+            "price": 99.4,
+            "date": "2023-10-05"
+          },
+          {
+            "quantity": 3000,
+            "price": 101.27,
+            "date": "2025-03-21"
+          }
+        ]
+      },
+      {
+        "isin": "INE134E08JS8",
+        "quantity": 6000,
+        "averageCostPrice": 99.75,
+        "purchaseDate": "2024-07-22",
+        "costingMethod": "FIFO",
+        "lots": [
+          {
+            "quantity": 6000,
+            "price": 99.75,
+            "date": "2024-07-22"
+          }
+        ]
+      },
+      {
+        "isin": "INE906B07HC3",
+        "quantity": 4500,
+        "averageCostPrice": 101.8,
+        "purchaseDate": "2023-12-01",
+        "costingMethod": "LIFO",
+        "lots": [
+          {
+            "quantity": 2000,
+            "price": 102.4,
+            "date": "2023-12-01"
+          },
+          {
+            "quantity": 2500,
+            "price": 101.32,
+            "date": "2025-08-14"
+          }
+        ]
+      },
+      {
+        "isin": "INE053F07AA1",
+        "quantity": 3500,
+        "averageCostPrice": 99.9,
+        "purchaseDate": "2024-05-16",
+        "costingMethod": "Weighted Average",
+        "lots": [
+          {
+            "quantity": 3500,
+            "price": 99.9,
+            "date": "2024-05-16"
+          }
+        ]
+      },
+      {
+        "isin": "INE002A08CD4",
+        "quantity": 2000,
+        "averageCostPrice": 98.2,
+        "purchaseDate": "2025-09-30",
+        "costingMethod": "FIFO",
+        "lots": [
+          {
+            "quantity": 2000,
+            "price": 98.2,
+            "date": "2025-09-30"
+          }
+        ]
+      },
+      {
+        "isin": "INE090A08AT1",
+        "quantity": 2,
+        "averageCostPrice": 99.1,
+        "purchaseDate": "2022-04-08",
+        "costingMethod": "Weighted Average",
+        "lots": [
+          {
+            "quantity": 1,
+            "price": 98,
+            "date": "2022-04-08"
+          },
+          {
+            "quantity": 1,
+            "price": 100.2,
+            "date": "2024-01-19"
+          }
+        ]
+      },
+      {
+        "isin": "INE062A08PQ2",
+        "quantity": 15,
+        "averageCostPrice": 99.5,
+        "purchaseDate": "2024-02-27",
+        "costingMethod": "FIFO",
+        "lots": [
+          {
+            "quantity": 15,
+            "price": 99.5,
+            "date": "2024-02-27"
+          }
+        ]
+      },
+      {
+        "isin": "IN2220260014",
+        "quantity": 12000,
+        "averageCostPrice": 100,
+        "purchaseDate": "2026-03-11",
+        "costingMethod": "Weighted Average",
+        "lots": [
+          {
+            "quantity": 12000,
+            "price": 100,
+            "date": "2026-03-11"
+          }
+        ]
+      }
+    ]
+  }
+]

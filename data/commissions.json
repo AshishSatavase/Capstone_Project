@@ -1,0 +1,172 @@
+{
+  "rates": [
+    {
+      "instrumentType": "G-Sec",
+      "clientTier": "Institutional",
+      "bps": 1
+    },
+    {
+      "instrumentType": "G-Sec",
+      "clientTier": "HNI",
+      "bps": 1.5
+    },
+    {
+      "instrumentType": "G-Sec",
+      "clientTier": "Bank-Treasury",
+      "bps": 0.8
+    },
+    {
+      "instrumentType": "SDL",
+      "clientTier": "Institutional",
+      "bps": 1.2
+    },
+    {
+      "instrumentType": "SDL",
+      "clientTier": "HNI",
+      "bps": 1.8
+    },
+    {
+      "instrumentType": "SDL",
+      "clientTier": "Bank-Treasury",
+      "bps": 1
+    },
+    {
+      "instrumentType": "T-Bill",
+      "clientTier": "Institutional",
+      "bps": 0.6
+    },
+    {
+      "instrumentType": "T-Bill",
+      "clientTier": "HNI",
+      "bps": 1
+    },
+    {
+      "instrumentType": "T-Bill",
+      "clientTier": "Bank-Treasury",
+      "bps": 0.5
+    },
+    {
+      "instrumentType": "NCD",
+      "clientTier": "Institutional",
+      "bps": 2.5
+    },
+    {
+      "instrumentType": "NCD",
+      "clientTier": "HNI",
+      "bps": 3.5
+    },
+    {
+      "instrumentType": "NCD",
+      "clientTier": "Bank-Treasury",
+      "bps": 2
+    },
+    {
+      "instrumentType": "CD",
+      "clientTier": "Institutional",
+      "bps": 1.5
+    },
+    {
+      "instrumentType": "CD",
+      "clientTier": "HNI",
+      "bps": 2
+    },
+    {
+      "instrumentType": "CD",
+      "clientTier": "Bank-Treasury",
+      "bps": 1.2
+    },
+    {
+      "instrumentType": "CP",
+      "clientTier": "Institutional",
+      "bps": 2
+    },
+    {
+      "instrumentType": "CP",
+      "clientTier": "HNI",
+      "bps": 3
+    },
+    {
+      "instrumentType": "CP",
+      "clientTier": "Bank-Treasury",
+      "bps": 1.5
+    },
+    {
+      "instrumentType": "AT1",
+      "clientTier": "Institutional",
+      "bps": 4
+    },
+    {
+      "instrumentType": "AT1",
+      "clientTier": "HNI",
+      "bps": 5
+    },
+    {
+      "instrumentType": "AT1",
+      "clientTier": "Bank-Treasury",
+      "bps": 3.5
+    }
+  ],
+  "summary": {
+    "asOf": "2026-08-20",
+    "earnedToday": 386320,
+    "earnedThisMonth": 4253143,
+    "daily": [
+      {
+        "date": "2026-08-03",
+        "amount": 223720
+      },
+      {
+        "date": "2026-08-04",
+        "amount": 367266
+      },
+      {
+        "date": "2026-08-05",
+        "amount": 211189
+      },
+      {
+        "date": "2026-08-06",
+        "amount": 360768
+      },
+      {
+        "date": "2026-08-07",
+        "amount": 339237
+      },
+      {
+        "date": "2026-08-10",
+        "amount": 331550
+      },
+      {
+        "date": "2026-08-11",
+        "amount": 237798
+      },
+      {
+        "date": "2026-08-12",
+        "amount": 382280
+      },
+      {
+        "date": "2026-08-13",
+        "amount": 208790
+      },
+      {
+        "date": "2026-08-14",
+        "amount": 319104
+      },
+      {
+        "date": "2026-08-17",
+        "amount": 333563
+      },
+      {
+        "date": "2026-08-18",
+        "amount": 309203
+      },
+      {
+        "date": "2026-08-19",
+        "amount": 242355
+      },
+      {
+        "date": "2026-08-20",
+        "amount": 386320
+      }
+    ]
+  }
+}

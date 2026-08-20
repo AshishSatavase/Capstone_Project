@@ -1,0 +1,34 @@
+[
+  {
+    "tenor": "3M",
+    "yield": 6.52
+  },
+  {
+    "tenor": "6M",
+    "yield": 6.61
+  },
+  {
+    "tenor": "1Y",
+    "yield": 6.68
+  },
+  {
+    "tenor": "2Y",
+    "yield": 6.74
+  },
+  {
+    "tenor": "5Y",
+    "yield": 6.81
+  },
+  {
+    "tenor": "10Y",
+    "yield": 6.92
+  },
+  {
+    "tenor": "15Y",
+    "yield": 7.01
+  },
+  {
+    "tenor": "30Y",
+    "yield": 7.12
+  }
+]
