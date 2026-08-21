@@ -333,3 +333,84 @@ export function getHoldingMTM(holding: any, bond: Bond) {
   const mtmPercent = unitCost > 0 ? ((mtmPerUnit / unitCost) * 100) : 0;
   return { mtmPerUnit, mtmTotal, mtmPercent };
 }
+
+/* ----- New helpers appended below ----- */
+
+export type TradeFilter = {
+  from?: string; // ISO date 'YYYY-MM-DD' expected
+  to?: string; // ISO date 'YYYY-MM-DD'
+  clientId?: string;
+  isin?: string;
+  status?: Trade["status"];
+};
+
+/** Filter trades by date range (inclusive), client, isin and status.
+ * - If only from is provided and to is missing => treat as single day (00:00 - 23:59).
+ * - If only to is provided and from is missing => treat as single day (00:00 - 23:59) for that 'to' date.
+ */
+export function filterTrades(filters: TradeFilter = {}): Trade[] {
+  const { from, to, clientId, isin, status } = filters;
+  let result = getTrades();
+
+  if (clientId) {
+    result = result.filter((t) => t.clientId === clientId);
+  }
+  if (isin) {
+    result = result.filter((t) => t.isin === isin);
+  }
+  if (status && status !== "All") {
+    result = result.filter((t) => t.status === status);
+  }
+
+  if (from || to) {
+    // create inclusive start/end Date objects
+    let start: Date | null = null;
+    let end: Date | null = null;
+
+    if (from && !to) {
+      start = new Date(from);
+      start.setHours(0, 0, 0, 0);
+      end = new Date(start);
+      end.setHours(23, 59, 59, 999);
+    } else if (!from && to) {
+      end = new Date(to);
+      end.setHours(23, 59, 59, 999);
+      start = new Date(end);
+      start.setHours(0, 0, 0, 0);
+    } else if (from && to) {
+      start = new Date(from);
+      start.setHours(0, 0, 0, 0);
+      end = new Date(to);
+      end.setHours(23, 59, 59, 999);
+    }
+
+    if (start && end) {
+      result = result.filter((t) => {
+        const d = new Date(t.placedAt);
+        return d >= start! && d <= end!;
+      });
+    }
+  }
+
+  return result.sort((a, b) => b.placedAt.localeCompare(a.placedAt));
+}
+
+/** Aggregate simple metrics for a set of trades */
+export function aggregateTrades(trades: Trade[]) {
+  const count = trades.length;
+  const totalQuantity = trades.reduce((s, t) => s + (t.quantity || 0), 0);
+  const totalFilledQuantity = trades.reduce((s, t) => s + (t.filledQuantity || 0), 0);
+  const totalNotional = trades.reduce(
+    (s, t) => s + ((t.avgFillPrice ?? 0) * (t.filledQuantity ?? 0)),
+    0,
+  );
+  const avgFillPriceWeighted = totalFilledQuantity ? totalNotional / totalFilledQuantity : 0;
+
+  return {
+    count,
+    totalQuantity,
+    totalFilledQuantity,
+    totalNotional,
+    avgFillPriceWeighted,
+  };
+}
