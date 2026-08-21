@@ -141,7 +141,11 @@ export type Trade = {
   status: OrderStatus;
   placedAt: string;
   updatedAt: string;
+  /** Set only after a user changes an order during the current session. */
+  lastModifiedAt?: string;
   validityDate: string | null;
+  /** In-memory alias used by the modify-order form for GTD orders. */
+  expiryDate?: string | null;
   brokerageBps: number;
   remarks: string | null;
 };
