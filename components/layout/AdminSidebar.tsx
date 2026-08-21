@@ -6,8 +6,7 @@ import { usePathname } from "next/navigation";
 const adminLinks = [
   { href: "/admin/blotter", label: "Trade Blotter", icon: "📊" },
   { href: "/admin/limits", label: "Dealer Limits", icon: "⚠️" },
-  { href: "/admin/commissions", label: "Commissions", icon: "💰" },
-  { href: "/admin/risk", label: "Risk Dashboard", icon: "📈" },
+  // Commissions and Risk removed per requirements
   { href: "/admin/kyc", label: "KYC Queue", icon: "✓" },
 ];
 
