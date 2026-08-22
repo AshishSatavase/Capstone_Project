@@ -154,6 +154,82 @@ export function AppBarChart({
   );
 }
 
+export type CandlePoint = {
+  date: string;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+};
+
+export function AppCandlestickChart({ data }: { data: CandlePoint[] }) {
+  if (!data.length) {
+    return null;
+  }
+
+  const width = 900;
+  const height = 280;
+  const padding = 36;
+  const min = Math.min(...data.map((point) => point.low)) * 0.99;
+  const max = Math.max(...data.map((point) => point.high)) * 1.01;
+  const xStep = (width - padding * 2) / data.length;
+  const yTicks = 4;
+  const priceToY = (value: number) => {
+    const ratio = (max - value) / (max - min || 1);
+    return padding + ratio * (height - padding * 2);
+  };
+  const tickValues = Array.from({ length: yTicks + 1 }, (_, index) => max - ((max - min) * index) / yTicks);
+
+  return (
+    <svg viewBox={`0 0 ${width} ${height}`} className="h-80 w-full" role="img" aria-label="Candlestick chart">
+      {tickValues.map((tick) => {
+        const y = priceToY(tick);
+        return (
+          <g key={`tick-${tick}`}>
+            <line x1={padding} x2={width - padding} y1={y} y2={y} stroke={chartPalette.grid} strokeWidth={1} />
+            <text x={padding - 8} y={y + 4} textAnchor="end" fontSize="10" fill={colors.muted}>
+              {tick.toFixed(2)}
+            </text>
+          </g>
+        );
+      })}
+      {data.map((point, index) => {
+        const x = padding + index * xStep + xStep / 2;
+        const wickTop = priceToY(point.high);
+        const wickBottom = priceToY(point.low);
+        const bodyTop = priceToY(Math.max(point.open, point.close));
+        const bodyBottom = priceToY(Math.min(point.open, point.close));
+        const bodyHeight = Math.max(3, Math.abs(bodyBottom - bodyTop));
+        const bodyWidth = Math.max(3, Math.min(9, xStep * 0.34));
+        const isUp = point.close >= point.open;
+
+        return (
+          <g key={`${point.date}-${index}`}>
+            <line
+              x1={x}
+              x2={x}
+              y1={wickTop}
+              y2={wickBottom}
+              stroke={colors.ink}
+              strokeWidth={2}
+              opacity={0.7}
+            />
+            <rect
+              x={x - bodyWidth / 2}
+              y={bodyTop}
+              width={bodyWidth}
+              height={bodyHeight}
+              rx={0}
+              fill={isUp ? colors.positive : colors.ubsRed}
+              opacity={0.9}
+            />
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 export type DonutSlice = { name: string; value: number };
 
 export function AppDonutChart({

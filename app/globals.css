@@ -39,6 +39,18 @@ body {
 body {
   font-family: var(--font-inter), system-ui, sans-serif;
   font-feature-settings: "tnum" 1, "ss01" 1;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
 }
 
 ::selection {

@@ -40,44 +40,28 @@ export function Sidebar() {
             No watchlist items
           </div>
         ) : (
-          <div className="divide-y divide-border">
+          <div className="space-y-2 p-2">
             {bonds.map((bond) => (
               <Link
                 key={bond.isin}
                 href={`/instrument/${bond.isin}`}
-                className="block p-3 hover:bg-faint/5 transition-colors group"
+                className="block rounded border border-border bg-white p-3 transition-colors hover:border-ubs-red/40 hover:bg-faint/5"
               >
-                {/* Ticker */}
-                <div className="flex items-start justify-between gap-2">
+                <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="text-xs font-semibold text-ink group-hover:text-ubs-red">
-                      {bond.ticker}
-                    </p>
-                    <p className="text-2xs text-muted mt-0.5">
-                      {bond.issuerName.split(" ").slice(0, 2).join(" ")}
-                    </p>
+                    <p className="text-xs font-semibold text-ink">{bond.ticker}</p>
+                    <p className="mt-0.5 text-2xs leading-4 text-muted">{bond.issuerName}</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs font-semibold text-ink">
-                      {bond.lastTradedPrice.toFixed(2)}
-                    </p>
-                    <DeltaValue
-                      value={bond.dayChangePercent}
-                      className="text-2xs"
-                    />
+                    <p className="text-xs font-semibold text-ink">{bond.lastTradedPrice.toFixed(2)}</p>
+                    <DeltaValue value={bond.dayChangePercent} className="text-2xs" />
                   </div>
                 </div>
 
-                {/* YTM */}
                 <div className="mt-2 flex items-center justify-between text-2xs">
                   <span className="text-muted">YTM</span>
-                  <span className="font-semibold text-ink">
-                    {bond.ytm.toFixed(2)}%
-                  </span>
+                  <span className="font-semibold text-ink">{bond.ytm.toFixed(2)}%</span>
                 </div>
-
-                {/* Mini chart placeholder */}
-                <div className="mt-2 h-8 w-full rounded bg-faint/10" />
               </Link>
             ))}
           </div>

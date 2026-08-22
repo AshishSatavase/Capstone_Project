@@ -358,7 +358,7 @@ export function filterTrades(filters: TradeFilter = {}): Trade[] {
   if (isin) {
     result = result.filter((t) => t.isin === isin);
   }
-  if (status && status !== "All") {
+  if (status) {
     result = result.filter((t) => t.status === status);
   }
 

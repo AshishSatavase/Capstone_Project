@@ -6969,5 +6969,2245 @@
       }
     ],
     "indentureDocUrl": "#"
+  },
+  {
+    "isin": "IN0020240126",
+    "ticker": "GS 6.79 2034",
+    "issuerName": "Government of India",
+    "issuerType": "Sovereign",
+    "instrumentType": "G-Sec",
+    "bidPrice": 97.77,
+    "askPrice": 97.83,
+    "lastTradedPrice": 97.8,
+    "dayChangePercent": -0.06,
+    "ytm": 7.19,
+    "currentYield": 6.94,
+    "couponRate": 6.79,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 100,
+    "minLotSize": 100,
+    "issueDate": "2024-10-07",
+    "issuePrice": 100,
+    "redemptionDate": "2034-10-07",
+    "redemptionPrice": 100,
+    "modifiedDuration": 7.32,
+    "macaulayDuration": 7.54,
+    "convexity": 61.55,
+    "creditRating": "Sovereign",
+    "ratingAgency": "RBI",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 1.19,
+    "outstandingIssueSize": 750000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Sovereign",
+    "daysToMaturity": 2967,
+    "maturityYears": 8.13,
+    "couponPaymentDates": [
+      "2026-10-17",
+      "2027-04-17",
+      "2027-10-16",
+      "2028-04-15",
+      "2028-10-14",
+      "2029-04-14",
+      "2029-10-13",
+      "2030-04-13",
+      "2030-10-12",
+      "2031-04-12",
+      "2031-10-11",
+      "2032-04-10",
+      "2032-10-09",
+      "2033-04-09",
+      "2033-10-08",
+      "2034-04-08",
+      "2034-10-07"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 96.9938,
+        "yield": 7.214
+      },
+      {
+        "date": "2026-07-21",
+        "price": 97.1753,
+        "yield": 7.207
+      },
+      {
+        "date": "2026-07-22",
+        "price": 97.2442,
+        "yield": 7.21
+      },
+      {
+        "date": "2026-07-23",
+        "price": 97.3617,
+        "yield": 7.2071
+      },
+      {
+        "date": "2026-07-24",
+        "price": 97.4222,
+        "yield": 7.2155
+      },
+      {
+        "date": "2026-07-27",
+        "price": 97.4194,
+        "yield": 7.2084
+      },
+      {
+        "date": "2026-07-28",
+        "price": 97.5494,
+        "yield": 7.2167
+      },
+      {
+        "date": "2026-07-29",
+        "price": 97.5664,
+        "yield": 7.2181
+      },
+      {
+        "date": "2026-07-30",
+        "price": 97.6949,
+        "yield": 7.2089
+      },
+      {
+        "date": "2026-07-31",
+        "price": 97.7917,
+        "yield": 7.1974
+      },
+      {
+        "date": "2026-08-03",
+        "price": 97.7788,
+        "yield": 7.2024
+      },
+      {
+        "date": "2026-08-04",
+        "price": 97.8558,
+        "yield": 7.1971
+      },
+      {
+        "date": "2026-08-05",
+        "price": 97.8537,
+        "yield": 7.191
+      },
+      {
+        "date": "2026-08-06",
+        "price": 97.8176,
+        "yield": 7.1853
+      },
+      {
+        "date": "2026-08-07",
+        "price": 97.8069,
+        "yield": 7.1931
+      },
+      {
+        "date": "2026-08-10",
+        "price": 97.7742,
+        "yield": 7.1977
+      },
+      {
+        "date": "2026-08-11",
+        "price": 97.7517,
+        "yield": 7.1905
+      },
+      {
+        "date": "2026-08-12",
+        "price": 97.7009,
+        "yield": 7.1941
+      },
+      {
+        "date": "2026-08-13",
+        "price": 97.669,
+        "yield": 7.2007
+      },
+      {
+        "date": "2026-08-14",
+        "price": 97.7018,
+        "yield": 7.2006
+      },
+      {
+        "date": "2026-08-17",
+        "price": 97.7027,
+        "yield": 7.1946
+      },
+      {
+        "date": "2026-08-18",
+        "price": 97.7075,
+        "yield": 7.2022
+      },
+      {
+        "date": "2026-08-19",
+        "price": 97.7421,
+        "yield": 7.1946
+      },
+      {
+        "date": "2026-08-20",
+        "price": 97.7699,
+        "yield": 7.205
+      },
+      {
+        "date": "2026-08-21",
+        "price": 97.8,
+        "yield": 7.19
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "IN0020240019",
+    "ticker": "GS 7.10 2034",
+    "issuerName": "Government of India",
+    "issuerType": "Sovereign",
+    "instrumentType": "G-Sec",
+    "bidPrice": 99.67,
+    "askPrice": 99.73,
+    "lastTradedPrice": 99.7,
+    "dayChangePercent": 0.1,
+    "ytm": 7.15,
+    "currentYield": 7.12,
+    "couponRate": 7.1,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 100,
+    "minLotSize": 100,
+    "issueDate": "2024-04-08",
+    "issuePrice": 100,
+    "redemptionDate": "2034-04-08",
+    "redemptionPrice": 100,
+    "modifiedDuration": 6.87,
+    "macaulayDuration": 7.07,
+    "convexity": 54.23,
+    "creditRating": "Sovereign",
+    "ratingAgency": "RBI",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 1.24,
+    "outstandingIssueSize": 750000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Sovereign",
+    "daysToMaturity": 2785,
+    "maturityYears": 7.63,
+    "couponPaymentDates": [
+      "2026-10-17",
+      "2027-04-17",
+      "2027-10-16",
+      "2028-04-15",
+      "2028-10-14",
+      "2029-04-14",
+      "2029-10-13",
+      "2030-04-13",
+      "2030-10-12",
+      "2031-04-12",
+      "2031-10-11",
+      "2032-04-10",
+      "2032-10-09",
+      "2033-04-09",
+      "2033-10-08",
+      "2034-04-08"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 98.9036,
+        "yield": 7.1814
+      },
+      {
+        "date": "2026-07-21",
+        "price": 99.0227,
+        "yield": 7.1752
+      },
+      {
+        "date": "2026-07-22",
+        "price": 99.1846,
+        "yield": 7.1799
+      },
+      {
+        "date": "2026-07-23",
+        "price": 99.2075,
+        "yield": 7.178
+      },
+      {
+        "date": "2026-07-24",
+        "price": 99.3524,
+        "yield": 7.1819
+      },
+      {
+        "date": "2026-07-27",
+        "price": 99.425,
+        "yield": 7.1759
+      },
+      {
+        "date": "2026-07-28",
+        "price": 99.5502,
+        "yield": 7.1772
+      },
+      {
+        "date": "2026-07-29",
+        "price": 99.5509,
+        "yield": 7.1775
+      },
+      {
+        "date": "2026-07-30",
+        "price": 99.5683,
+        "yield": 7.1639
+      },
+      {
+        "date": "2026-07-31",
+        "price": 99.5097,
+        "yield": 7.1533
+      },
+      {
+        "date": "2026-08-03",
+        "price": 99.6178,
+        "yield": 7.1528
+      },
+      {
+        "date": "2026-08-04",
+        "price": 99.6903,
+        "yield": 7.1518
+      },
+      {
+        "date": "2026-08-05",
+        "price": 99.7356,
+        "yield": 7.1429
+      },
+      {
+        "date": "2026-08-06",
+        "price": 99.6395,
+        "yield": 7.1471
+      },
+      {
+        "date": "2026-08-07",
+        "price": 99.5824,
+        "yield": 7.1506
+      },
+      {
+        "date": "2026-08-10",
+        "price": 99.6072,
+        "yield": 7.1392
+      },
+      {
+        "date": "2026-08-11",
+        "price": 99.6211,
+        "yield": 7.1519
+      },
+      {
+        "date": "2026-08-12",
+        "price": 99.5627,
+        "yield": 7.1538
+      },
+      {
+        "date": "2026-08-13",
+        "price": 99.6598,
+        "yield": 7.1477
+      },
+      {
+        "date": "2026-08-14",
+        "price": 99.5788,
+        "yield": 7.1471
+      },
+      {
+        "date": "2026-08-17",
+        "price": 99.6678,
+        "yield": 7.1475
+      },
+      {
+        "date": "2026-08-18",
+        "price": 99.71,
+        "yield": 7.1478
+      },
+      {
+        "date": "2026-08-19",
+        "price": 99.7785,
+        "yield": 7.1467
+      },
+      {
+        "date": "2026-08-20",
+        "price": 99.783,
+        "yield": 7.1547
+      },
+      {
+        "date": "2026-08-21",
+        "price": 99.7,
+        "yield": 7.15
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "IN2220190135",
+    "ticker": "MH SDL 6.98 2030",
+    "issuerName": "Government of Maharashtra",
+    "issuerType": "State Government",
+    "instrumentType": "SDL",
+    "bidPrice": 100.57,
+    "askPrice": 100.63,
+    "lastTradedPrice": 100.6,
+    "dayChangePercent": -0.08,
+    "ytm": 6.77,
+    "currentYield": 6.94,
+    "couponRate": 6.98,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 100,
+    "minLotSize": 100,
+    "issueDate": "2019-02-26",
+    "issuePrice": 100,
+    "redemptionDate": "2030-02-26",
+    "redemptionPrice": 100,
+    "modifiedDuration": 3.16,
+    "macaulayDuration": 3.26,
+    "convexity": 11.51,
+    "creditRating": "Sovereign",
+    "ratingAgency": "RBI",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 1.22,
+    "outstandingIssueSize": 100000,
+    "listingExchange": "NSE/BSE",
+    "sector": "State Government",
+    "daysToMaturity": 1283,
+    "maturityYears": 3.52,
+    "couponPaymentDates": [
+      "2026-09-01",
+      "2027-03-02",
+      "2027-08-31",
+      "2028-02-29",
+      "2028-08-29",
+      "2029-02-27",
+      "2029-08-28",
+      "2030-02-26"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 99.7383,
+        "yield": 6.8011
+      },
+      {
+        "date": "2026-07-21",
+        "price": 99.832,
+        "yield": 6.7865
+      },
+      {
+        "date": "2026-07-22",
+        "price": 100.009,
+        "yield": 6.7929
+      },
+      {
+        "date": "2026-07-23",
+        "price": 100.0391,
+        "yield": 6.7883
+      },
+      {
+        "date": "2026-07-24",
+        "price": 100.1922,
+        "yield": 6.7847
+      },
+      {
+        "date": "2026-07-27",
+        "price": 100.3288,
+        "yield": 6.7872
+      },
+      {
+        "date": "2026-07-28",
+        "price": 100.305,
+        "yield": 6.7724
+      },
+      {
+        "date": "2026-07-29",
+        "price": 100.3797,
+        "yield": 6.7709
+      },
+      {
+        "date": "2026-07-30",
+        "price": 100.4722,
+        "yield": 6.7647
+      },
+      {
+        "date": "2026-07-31",
+        "price": 100.5283,
+        "yield": 6.7774
+      },
+      {
+        "date": "2026-08-03",
+        "price": 100.572,
+        "yield": 6.7805
+      },
+      {
+        "date": "2026-08-04",
+        "price": 100.6349,
+        "yield": 6.7774
+      },
+      {
+        "date": "2026-08-05",
+        "price": 100.6608,
+        "yield": 6.7716
+      },
+      {
+        "date": "2026-08-06",
+        "price": 100.6319,
+        "yield": 6.7678
+      },
+      {
+        "date": "2026-08-07",
+        "price": 100.6403,
+        "yield": 6.768
+      },
+      {
+        "date": "2026-08-10",
+        "price": 100.6778,
+        "yield": 6.7654
+      },
+      {
+        "date": "2026-08-11",
+        "price": 100.6899,
+        "yield": 6.7773
+      },
+      {
+        "date": "2026-08-12",
+        "price": 100.6164,
+        "yield": 6.7775
+      },
+      {
+        "date": "2026-08-13",
+        "price": 100.5266,
+        "yield": 6.7731
+      },
+      {
+        "date": "2026-08-14",
+        "price": 100.5439,
+        "yield": 6.7657
+      },
+      {
+        "date": "2026-08-17",
+        "price": 100.5895,
+        "yield": 6.7595
+      },
+      {
+        "date": "2026-08-18",
+        "price": 100.6406,
+        "yield": 6.7617
+      },
+      {
+        "date": "2026-08-19",
+        "price": 100.6871,
+        "yield": 6.7518
+      },
+      {
+        "date": "2026-08-20",
+        "price": 100.7054,
+        "yield": 6.7548
+      },
+      {
+        "date": "2026-08-21",
+        "price": 100.6,
+        "yield": 6.77
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE040A16K8",
+    "ticker": "HDFCBANK CD 22JAN27",
+    "issuerName": "HDFC Bank Ltd",
+    "issuerType": "Bank",
+    "instrumentType": "CD",
+    "bidPrice": 97.27,
+    "askPrice": 97.33,
+    "lastTradedPrice": 97.3,
+    "dayChangePercent": 0.1,
+    "ytm": 7.3,
+    "currentYield": 0,
+    "couponRate": 0,
+    "couponType": "Zero",
+    "couponFrequency": "None",
+    "floatingBenchmark": null,
+    "faceValue": 100000,
+    "minLotSize": 1,
+    "issueDate": "2026-07-24",
+    "issuePrice": 97.3,
+    "redemptionDate": "2027-01-22",
+    "redemptionPrice": 100000,
+    "modifiedDuration": 0.42,
+    "macaulayDuration": 0.43,
+    "convexity": 0.2,
+    "creditRating": "A1+",
+    "ratingAgency": "CRISIL",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": false,
+    "accruedInterestAmount": 0,
+    "outstandingIssueSize": 500000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Banking",
+    "daysToMaturity": 152,
+    "maturityYears": 0.42,
+    "couponPaymentDates": [],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 96.5878,
+        "yield": 7.34
+      },
+      {
+        "date": "2026-07-21",
+        "price": 96.677,
+        "yield": 7.3321
+      },
+      {
+        "date": "2026-07-22",
+        "price": 96.8731,
+        "yield": 7.3192
+      },
+      {
+        "date": "2026-07-23",
+        "price": 96.9548,
+        "yield": 7.3181
+      },
+      {
+        "date": "2026-07-24",
+        "price": 97.0433,
+        "yield": 7.3174
+      },
+      {
+        "date": "2026-07-27",
+        "price": 97.0371,
+        "yield": 7.3166
+      },
+      {
+        "date": "2026-07-28",
+        "price": 97.0049,
+        "yield": 7.3235
+      },
+      {
+        "date": "2026-07-29",
+        "price": 97.0043,
+        "yield": 7.3163
+      },
+      {
+        "date": "2026-07-30",
+        "price": 97.0164,
+        "yield": 7.3052
+      },
+      {
+        "date": "2026-07-31",
+        "price": 97.0388,
+        "yield": 7.3044
+      },
+      {
+        "date": "2026-08-03",
+        "price": 97.0017,
+        "yield": 7.3006
+      },
+      {
+        "date": "2026-08-04",
+        "price": 96.9871,
+        "yield": 7.2891
+      },
+      {
+        "date": "2026-08-05",
+        "price": 97.0525,
+        "yield": 7.2876
+      },
+      {
+        "date": "2026-08-06",
+        "price": 97.0436,
+        "yield": 7.278
+      },
+      {
+        "date": "2026-08-07",
+        "price": 97.1061,
+        "yield": 7.2765
+      },
+      {
+        "date": "2026-08-10",
+        "price": 97.068,
+        "yield": 7.2698
+      },
+      {
+        "date": "2026-08-11",
+        "price": 97.1676,
+        "yield": 7.2863
+      },
+      {
+        "date": "2026-08-12",
+        "price": 97.1965,
+        "yield": 7.2865
+      },
+      {
+        "date": "2026-08-13",
+        "price": 97.1604,
+        "yield": 7.3003
+      },
+      {
+        "date": "2026-08-14",
+        "price": 97.1018,
+        "yield": 7.2973
+      },
+      {
+        "date": "2026-08-17",
+        "price": 97.2177,
+        "yield": 7.2967
+      },
+      {
+        "date": "2026-08-18",
+        "price": 97.2116,
+        "yield": 7.3051
+      },
+      {
+        "date": "2026-08-19",
+        "price": 97.3162,
+        "yield": 7.2992
+      },
+      {
+        "date": "2026-08-20",
+        "price": 97.3923,
+        "yield": 7.299
+      },
+      {
+        "date": "2026-08-21",
+        "price": 97.3,
+        "yield": 7.3
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE261F16JA8",
+    "ticker": "NABARD CD 04FEB27",
+    "issuerName": "National Bank for Agriculture and Rural Development",
+    "issuerType": "Financial Institution",
+    "instrumentType": "CD",
+    "bidPrice": 96.87,
+    "askPrice": 96.93,
+    "lastTradedPrice": 96.9,
+    "dayChangePercent": -0.08,
+    "ytm": 7.25,
+    "currentYield": 0,
+    "couponRate": 0,
+    "couponType": "Zero",
+    "couponFrequency": "None",
+    "floatingBenchmark": null,
+    "faceValue": 100000,
+    "minLotSize": 1,
+    "issueDate": "2026-08-07",
+    "issuePrice": 96.9,
+    "redemptionDate": "2027-02-04",
+    "redemptionPrice": 100000,
+    "modifiedDuration": 0.45,
+    "macaulayDuration": 0.47,
+    "convexity": 0.24,
+    "creditRating": "A1+",
+    "ratingAgency": "CRISIL",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": false,
+    "accruedInterestAmount": 0,
+    "outstandingIssueSize": 500000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Financial Services",
+    "daysToMaturity": 165,
+    "maturityYears": 0.45,
+    "couponPaymentDates": [],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 96.1311,
+        "yield": 7.2716
+      },
+      {
+        "date": "2026-07-21",
+        "price": 96.3055,
+        "yield": 7.2677
+      },
+      {
+        "date": "2026-07-22",
+        "price": 96.37,
+        "yield": 7.2763
+      },
+      {
+        "date": "2026-07-23",
+        "price": 96.5159,
+        "yield": 7.2683
+      },
+      {
+        "date": "2026-07-24",
+        "price": 96.674,
+        "yield": 7.272
+      },
+      {
+        "date": "2026-07-27",
+        "price": 96.6357,
+        "yield": 7.2768
+      },
+      {
+        "date": "2026-07-28",
+        "price": 96.635,
+        "yield": 7.2779
+      },
+      {
+        "date": "2026-07-29",
+        "price": 96.6454,
+        "yield": 7.2623
+      },
+      {
+        "date": "2026-07-30",
+        "price": 96.6173,
+        "yield": 7.2521
+      },
+      {
+        "date": "2026-07-31",
+        "price": 96.6878,
+        "yield": 7.2546
+      },
+      {
+        "date": "2026-08-03",
+        "price": 96.7839,
+        "yield": 7.2575
+      },
+      {
+        "date": "2026-08-04",
+        "price": 96.8401,
+        "yield": 7.2564
+      },
+      {
+        "date": "2026-08-05",
+        "price": 96.8024,
+        "yield": 7.2489
+      },
+      {
+        "date": "2026-08-06",
+        "price": 96.8109,
+        "yield": 7.2402
+      },
+      {
+        "date": "2026-08-07",
+        "price": 96.8747,
+        "yield": 7.2383
+      },
+      {
+        "date": "2026-08-10",
+        "price": 96.9377,
+        "yield": 7.2325
+      },
+      {
+        "date": "2026-08-11",
+        "price": 96.9459,
+        "yield": 7.2236
+      },
+      {
+        "date": "2026-08-12",
+        "price": 96.9464,
+        "yield": 7.2401
+      },
+      {
+        "date": "2026-08-13",
+        "price": 96.8769,
+        "yield": 7.2323
+      },
+      {
+        "date": "2026-08-14",
+        "price": 96.904,
+        "yield": 7.2448
+      },
+      {
+        "date": "2026-08-17",
+        "price": 96.9345,
+        "yield": 7.2532
+      },
+      {
+        "date": "2026-08-18",
+        "price": 96.9637,
+        "yield": 7.2598
+      },
+      {
+        "date": "2026-08-19",
+        "price": 96.8952,
+        "yield": 7.2536
+      },
+      {
+        "date": "2026-08-20",
+        "price": 96.9533,
+        "yield": 7.2456
+      },
+      {
+        "date": "2026-08-21",
+        "price": 96.9,
+        "yield": 7.25
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE752E08783",
+    "ticker": "POWERGRID 2025 SERIES",
+    "issuerName": "Power Grid Corporation of India Ltd",
+    "issuerType": "PSU",
+    "instrumentType": "Bond",
+    "bidPrice": 98.87,
+    "askPrice": 98.93,
+    "lastTradedPrice": 98.9,
+    "dayChangePercent": 0.08,
+    "ytm": 7.35,
+    "currentYield": 7.23,
+    "couponRate": 7.15,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2025-04-15",
+    "issuePrice": 1000,
+    "redemptionDate": "2035-04-15",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 7.78,
+    "macaulayDuration": 8.02,
+    "convexity": 69.69,
+    "creditRating": "AAA",
+    "ratingAgency": "CARE",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 12.51,
+    "outstandingIssueSize": 250000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Utilities",
+    "daysToMaturity": 3157,
+    "maturityYears": 8.65,
+    "couponPaymentDates": [
+      "2026-10-25",
+      "2027-04-25",
+      "2027-10-24",
+      "2028-04-23",
+      "2028-10-22",
+      "2029-04-22",
+      "2029-10-21",
+      "2030-04-21",
+      "2030-10-20",
+      "2031-04-20",
+      "2031-10-19",
+      "2032-04-18",
+      "2032-10-17",
+      "2033-04-17",
+      "2033-10-16",
+      "2034-04-16",
+      "2034-10-15",
+      "2035-04-15"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 98.0342,
+        "yield": 7.3715
+      },
+      {
+        "date": "2026-07-21",
+        "price": 98.1714,
+        "yield": 7.3719
+      },
+      {
+        "date": "2026-07-22",
+        "price": 98.241,
+        "yield": 7.3618
+      },
+      {
+        "date": "2026-07-23",
+        "price": 98.3245,
+        "yield": 7.3691
+      },
+      {
+        "date": "2026-07-24",
+        "price": 98.429,
+        "yield": 7.3568
+      },
+      {
+        "date": "2026-07-27",
+        "price": 98.5763,
+        "yield": 7.3511
+      },
+      {
+        "date": "2026-07-28",
+        "price": 98.6702,
+        "yield": 7.3481
+      },
+      {
+        "date": "2026-07-29",
+        "price": 98.6552,
+        "yield": 7.337
+      },
+      {
+        "date": "2026-07-30",
+        "price": 98.7025,
+        "yield": 7.3412
+      },
+      {
+        "date": "2026-07-31",
+        "price": 98.8077,
+        "yield": 7.3469
+      },
+      {
+        "date": "2026-08-03",
+        "price": 98.8672,
+        "yield": 7.3563
+      },
+      {
+        "date": "2026-08-04",
+        "price": 98.8538,
+        "yield": 7.3589
+      },
+      {
+        "date": "2026-08-05",
+        "price": 98.7791,
+        "yield": 7.3671
+      },
+      {
+        "date": "2026-08-06",
+        "price": 98.8483,
+        "yield": 7.3675
+      },
+      {
+        "date": "2026-08-07",
+        "price": 98.777,
+        "yield": 7.36
+      },
+      {
+        "date": "2026-08-10",
+        "price": 98.8444,
+        "yield": 7.348
+      },
+      {
+        "date": "2026-08-11",
+        "price": 98.8486,
+        "yield": 7.3421
+      },
+      {
+        "date": "2026-08-12",
+        "price": 98.8482,
+        "yield": 7.3516
+      },
+      {
+        "date": "2026-08-13",
+        "price": 98.8295,
+        "yield": 7.3517
+      },
+      {
+        "date": "2026-08-14",
+        "price": 98.7794,
+        "yield": 7.3521
+      },
+      {
+        "date": "2026-08-17",
+        "price": 98.8511,
+        "yield": 7.3431
+      },
+      {
+        "date": "2026-08-18",
+        "price": 98.8978,
+        "yield": 7.3425
+      },
+      {
+        "date": "2026-08-19",
+        "price": 98.9563,
+        "yield": 7.3453
+      },
+      {
+        "date": "2026-08-20",
+        "price": 98.912,
+        "yield": 7.3401
+      },
+      {
+        "date": "2026-08-21",
+        "price": 98.9,
+        "yield": 7.35
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE752E08791",
+    "ticker": "POWERGRID 2025 SERIES 2",
+    "issuerName": "Power Grid Corporation of India Ltd",
+    "issuerType": "PSU",
+    "instrumentType": "Bond",
+    "bidPrice": 98.67,
+    "askPrice": 98.73,
+    "lastTradedPrice": 98.7,
+    "dayChangePercent": 0.07,
+    "ytm": 7.38,
+    "currentYield": 7.29,
+    "couponRate": 7.2,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2025-08-12",
+    "issuePrice": 1000,
+    "redemptionDate": "2035-08-12",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 8.08,
+    "macaulayDuration": 8.32,
+    "convexity": 75.04,
+    "creditRating": "AAA",
+    "ratingAgency": "ICRA",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 12.6,
+    "outstandingIssueSize": 50000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Utilities",
+    "daysToMaturity": 3276,
+    "maturityYears": 8.98,
+    "couponPaymentDates": [
+      "2027-02-21",
+      "2027-08-22",
+      "2028-02-20",
+      "2028-08-20",
+      "2029-02-18",
+      "2029-08-19",
+      "2030-02-17",
+      "2030-08-18",
+      "2031-02-16",
+      "2031-08-17",
+      "2032-02-15",
+      "2032-08-15",
+      "2033-02-13",
+      "2033-08-14",
+      "2034-02-12",
+      "2034-08-13",
+      "2035-02-11",
+      "2035-08-12"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 97.8106,
+        "yield": 7.4236
+      },
+      {
+        "date": "2026-07-21",
+        "price": 98.0145,
+        "yield": 7.4233
+      },
+      {
+        "date": "2026-07-22",
+        "price": 98.1783,
+        "yield": 7.4202
+      },
+      {
+        "date": "2026-07-23",
+        "price": 98.2898,
+        "yield": 7.4115
+      },
+      {
+        "date": "2026-07-24",
+        "price": 98.2761,
+        "yield": 7.4101
+      },
+      {
+        "date": "2026-07-27",
+        "price": 98.4296,
+        "yield": 7.4099
+      },
+      {
+        "date": "2026-07-28",
+        "price": 98.4096,
+        "yield": 7.3966
+      },
+      {
+        "date": "2026-07-29",
+        "price": 98.3907,
+        "yield": 7.3846
+      },
+      {
+        "date": "2026-07-30",
+        "price": 98.4971,
+        "yield": 7.3727
+      },
+      {
+        "date": "2026-07-31",
+        "price": 98.4878,
+        "yield": 7.3716
+      },
+      {
+        "date": "2026-08-03",
+        "price": 98.483,
+        "yield": 7.3729
+      },
+      {
+        "date": "2026-08-04",
+        "price": 98.5915,
+        "yield": 7.3829
+      },
+      {
+        "date": "2026-08-05",
+        "price": 98.6925,
+        "yield": 7.3734
+      },
+      {
+        "date": "2026-08-06",
+        "price": 98.7654,
+        "yield": 7.3688
+      },
+      {
+        "date": "2026-08-07",
+        "price": 98.7548,
+        "yield": 7.3674
+      },
+      {
+        "date": "2026-08-10",
+        "price": 98.7519,
+        "yield": 7.3812
+      },
+      {
+        "date": "2026-08-11",
+        "price": 98.671,
+        "yield": 7.3773
+      },
+      {
+        "date": "2026-08-12",
+        "price": 98.6758,
+        "yield": 7.3818
+      },
+      {
+        "date": "2026-08-13",
+        "price": 98.6852,
+        "yield": 7.3884
+      },
+      {
+        "date": "2026-08-14",
+        "price": 98.6807,
+        "yield": 7.3831
+      },
+      {
+        "date": "2026-08-17",
+        "price": 98.6849,
+        "yield": 7.3808
+      },
+      {
+        "date": "2026-08-18",
+        "price": 98.6786,
+        "yield": 7.3791
+      },
+      {
+        "date": "2026-08-19",
+        "price": 98.7529,
+        "yield": 7.3699
+      },
+      {
+        "date": "2026-08-20",
+        "price": 98.8298,
+        "yield": 7.3713
+      },
+      {
+        "date": "2026-08-21",
+        "price": 98.7,
+        "yield": 7.38
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE752E08809",
+    "ticker": "POWERGRID 2025 SERIES 3",
+    "issuerName": "Power Grid Corporation of India Ltd",
+    "issuerType": "PSU",
+    "instrumentType": "Bond",
+    "bidPrice": 98.47,
+    "askPrice": 98.53,
+    "lastTradedPrice": 98.5,
+    "dayChangePercent": 0.07,
+    "ytm": 7.52,
+    "currentYield": 7.46,
+    "couponRate": 7.35,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2025-12-12",
+    "issuePrice": 1000,
+    "redemptionDate": "2036-12-12",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 9.28,
+    "macaulayDuration": 9.56,
+    "convexity": 99.06,
+    "creditRating": "AAA",
+    "ratingAgency": "CRISIL",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 12.86,
+    "outstandingIssueSize": 100000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Utilities",
+    "daysToMaturity": 3764,
+    "maturityYears": 10.31,
+    "couponPaymentDates": [
+      "2026-12-25",
+      "2027-06-25",
+      "2027-12-24",
+      "2028-06-23",
+      "2028-12-22",
+      "2029-06-22",
+      "2029-12-21",
+      "2030-06-21",
+      "2030-12-20",
+      "2031-06-20",
+      "2031-12-19",
+      "2032-06-18",
+      "2032-12-17",
+      "2033-06-17",
+      "2033-12-16",
+      "2034-06-16",
+      "2034-12-15",
+      "2035-06-15",
+      "2035-12-14",
+      "2036-06-13",
+      "2036-12-12"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 97.6661,
+        "yield": 7.5603
+      },
+      {
+        "date": "2026-07-21",
+        "price": 97.8435,
+        "yield": 7.56
+      },
+      {
+        "date": "2026-07-22",
+        "price": 97.9689,
+        "yield": 7.5474
+      },
+      {
+        "date": "2026-07-23",
+        "price": 97.983,
+        "yield": 7.5331
+      },
+      {
+        "date": "2026-07-24",
+        "price": 98.0556,
+        "yield": 7.5328
+      },
+      {
+        "date": "2026-07-27",
+        "price": 98.2251,
+        "yield": 7.5288
+      },
+      {
+        "date": "2026-07-28",
+        "price": 98.263,
+        "yield": 7.5286
+      },
+      {
+        "date": "2026-07-29",
+        "price": 98.3617,
+        "yield": 7.5371
+      },
+      {
+        "date": "2026-07-30",
+        "price": 98.3739,
+        "yield": 7.5407
+      },
+      {
+        "date": "2026-07-31",
+        "price": 98.3754,
+        "yield": 7.545
+      },
+      {
+        "date": "2026-08-03",
+        "price": 98.3476,
+        "yield": 7.5386
+      },
+      {
+        "date": "2026-08-04",
+        "price": 98.4593,
+        "yield": 7.5286
+      },
+      {
+        "date": "2026-08-05",
+        "price": 98.5076,
+        "yield": 7.5269
+      },
+      {
+        "date": "2026-08-06",
+        "price": 98.5036,
+        "yield": 7.524
+      },
+      {
+        "date": "2026-08-07",
+        "price": 98.4834,
+        "yield": 7.534
+      },
+      {
+        "date": "2026-08-10",
+        "price": 98.4466,
+        "yield": 7.5349
+      },
+      {
+        "date": "2026-08-11",
+        "price": 98.5449,
+        "yield": 7.5434
+      },
+      {
+        "date": "2026-08-12",
+        "price": 98.5392,
+        "yield": 7.5298
+      },
+      {
+        "date": "2026-08-13",
+        "price": 98.577,
+        "yield": 7.5389
+      },
+      {
+        "date": "2026-08-14",
+        "price": 98.6132,
+        "yield": 7.5427
+      },
+      {
+        "date": "2026-08-17",
+        "price": 98.5529,
+        "yield": 7.5486
+      },
+      {
+        "date": "2026-08-18",
+        "price": 98.5029,
+        "yield": 7.5528
+      },
+      {
+        "date": "2026-08-19",
+        "price": 98.5133,
+        "yield": 7.5586
+      },
+      {
+        "date": "2026-08-20",
+        "price": 98.5134,
+        "yield": 7.5551
+      },
+      {
+        "date": "2026-08-21",
+        "price": 98.5,
+        "yield": 7.52
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE0Z8Z07016",
+    "ticker": "CAPINVIT DEBT SERIES I",
+    "issuerName": "Capital Infra Trust",
+    "issuerType": "Infrastructure Trust",
+    "instrumentType": "InvIT Debt",
+    "bidPrice": 99.37,
+    "askPrice": 99.43,
+    "lastTradedPrice": 99.4,
+    "dayChangePercent": 0.04,
+    "ytm": 8.25,
+    "currentYield": 8.15,
+    "couponRate": 8.1,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2025-04-28",
+    "issuePrice": 1000,
+    "redemptionDate": "2031-04-28",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 4.21,
+    "macaulayDuration": 4.34,
+    "convexity": 20.42,
+    "creditRating": "AAA",
+    "ratingAgency": "India Ratings",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 14.17,
+    "outstandingIssueSize": 250000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Infrastructure",
+    "daysToMaturity": 1709,
+    "maturityYears": 4.68,
+    "couponPaymentDates": [
+      "2026-11-02",
+      "2027-05-03",
+      "2027-11-01",
+      "2028-05-01",
+      "2028-10-30",
+      "2029-04-30",
+      "2029-10-29",
+      "2030-04-29",
+      "2030-10-28",
+      "2031-04-28"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 98.5526,
+        "yield": 8.2827
+      },
+      {
+        "date": "2026-07-21",
+        "price": 98.7596,
+        "yield": 8.2712
+      },
+      {
+        "date": "2026-07-22",
+        "price": 98.8836,
+        "yield": 8.2558
+      },
+      {
+        "date": "2026-07-23",
+        "price": 98.9655,
+        "yield": 8.2558
+      },
+      {
+        "date": "2026-07-24",
+        "price": 99.087,
+        "yield": 8.2646
+      },
+      {
+        "date": "2026-07-27",
+        "price": 99.0944,
+        "yield": 8.2604
+      },
+      {
+        "date": "2026-07-28",
+        "price": 99.1408,
+        "yield": 8.2617
+      },
+      {
+        "date": "2026-07-29",
+        "price": 99.1245,
+        "yield": 8.255
+      },
+      {
+        "date": "2026-07-30",
+        "price": 99.2397,
+        "yield": 8.2456
+      },
+      {
+        "date": "2026-07-31",
+        "price": 99.1926,
+        "yield": 8.2538
+      },
+      {
+        "date": "2026-08-03",
+        "price": 99.2827,
+        "yield": 8.2458
+      },
+      {
+        "date": "2026-08-04",
+        "price": 99.3443,
+        "yield": 8.2455
+      },
+      {
+        "date": "2026-08-05",
+        "price": 99.2992,
+        "yield": 8.2367
+      },
+      {
+        "date": "2026-08-06",
+        "price": 99.3551,
+        "yield": 8.2311
+      },
+      {
+        "date": "2026-08-07",
+        "price": 99.3027,
+        "yield": 8.2235
+      },
+      {
+        "date": "2026-08-10",
+        "price": 99.3227,
+        "yield": 8.2368
+      },
+      {
+        "date": "2026-08-11",
+        "price": 99.2629,
+        "yield": 8.2431
+      },
+      {
+        "date": "2026-08-12",
+        "price": 99.2675,
+        "yield": 8.2441
+      },
+      {
+        "date": "2026-08-13",
+        "price": 99.3459,
+        "yield": 8.2488
+      },
+      {
+        "date": "2026-08-14",
+        "price": 99.4119,
+        "yield": 8.2599
+      },
+      {
+        "date": "2026-08-17",
+        "price": 99.4228,
+        "yield": 8.2541
+      },
+      {
+        "date": "2026-08-18",
+        "price": 99.3456,
+        "yield": 8.2416
+      },
+      {
+        "date": "2026-08-19",
+        "price": 99.407,
+        "yield": 8.2479
+      },
+      {
+        "date": "2026-08-20",
+        "price": 99.3751,
+        "yield": 8.2473
+      },
+      {
+        "date": "2026-08-21",
+        "price": 99.4,
+        "yield": 8.25
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE0Z8Z07024",
+    "ticker": "CAPINVIT DEBT SERIES II",
+    "issuerName": "Capital Infra Trust",
+    "issuerType": "Infrastructure Trust",
+    "instrumentType": "InvIT Debt",
+    "bidPrice": 99.17,
+    "askPrice": 99.23,
+    "lastTradedPrice": 99.2,
+    "dayChangePercent": 0.07,
+    "ytm": 8.48,
+    "currentYield": 8.42,
+    "couponRate": 8.35,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2025-04-28",
+    "issuePrice": 1000,
+    "redemptionDate": "2033-04-28",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 6.02,
+    "macaulayDuration": 6.2,
+    "convexity": 41.63,
+    "creditRating": "AAA",
+    "ratingAgency": "India Ratings",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 14.61,
+    "outstandingIssueSize": 250000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Infrastructure",
+    "daysToMaturity": 2440,
+    "maturityYears": 6.68,
+    "couponPaymentDates": [
+      "2026-11-05",
+      "2027-05-06",
+      "2027-11-04",
+      "2028-05-04",
+      "2028-11-02",
+      "2029-05-03",
+      "2029-11-01",
+      "2030-05-02",
+      "2030-10-31",
+      "2031-05-01",
+      "2031-10-30",
+      "2032-04-29",
+      "2032-10-28",
+      "2033-04-28"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 98.397,
+        "yield": 8.5243
+      },
+      {
+        "date": "2026-07-21",
+        "price": 98.5492,
+        "yield": 8.5144
+      },
+      {
+        "date": "2026-07-22",
+        "price": 98.6769,
+        "yield": 8.5016
+      },
+      {
+        "date": "2026-07-23",
+        "price": 98.7263,
+        "yield": 8.4968
+      },
+      {
+        "date": "2026-07-24",
+        "price": 98.888,
+        "yield": 8.4929
+      },
+      {
+        "date": "2026-07-27",
+        "price": 98.8688,
+        "yield": 8.4814
+      },
+      {
+        "date": "2026-07-28",
+        "price": 98.8566,
+        "yield": 8.4789
+      },
+      {
+        "date": "2026-07-29",
+        "price": 98.8815,
+        "yield": 8.4721
+      },
+      {
+        "date": "2026-07-30",
+        "price": 99.0024,
+        "yield": 8.4708
+      },
+      {
+        "date": "2026-07-31",
+        "price": 98.9479,
+        "yield": 8.4681
+      },
+      {
+        "date": "2026-08-03",
+        "price": 99.0042,
+        "yield": 8.4762
+      },
+      {
+        "date": "2026-08-04",
+        "price": 99.0803,
+        "yield": 8.4751
+      },
+      {
+        "date": "2026-08-05",
+        "price": 99.1793,
+        "yield": 8.4775
+      },
+      {
+        "date": "2026-08-06",
+        "price": 99.2118,
+        "yield": 8.4817
+      },
+      {
+        "date": "2026-08-07",
+        "price": 99.1501,
+        "yield": 8.48
+      },
+      {
+        "date": "2026-08-10",
+        "price": 99.1237,
+        "yield": 8.4777
+      },
+      {
+        "date": "2026-08-11",
+        "price": 99.1145,
+        "yield": 8.4703
+      },
+      {
+        "date": "2026-08-12",
+        "price": 99.2125,
+        "yield": 8.4623
+      },
+      {
+        "date": "2026-08-13",
+        "price": 99.2559,
+        "yield": 8.4712
+      },
+      {
+        "date": "2026-08-14",
+        "price": 99.3317,
+        "yield": 8.4802
+      },
+      {
+        "date": "2026-08-17",
+        "price": 99.2848,
+        "yield": 8.4705
+      },
+      {
+        "date": "2026-08-18",
+        "price": 99.327,
+        "yield": 8.4747
+      },
+      {
+        "date": "2026-08-19",
+        "price": 99.3664,
+        "yield": 8.4786
+      },
+      {
+        "date": "2026-08-20",
+        "price": 99.3381,
+        "yield": 8.4679
+      },
+      {
+        "date": "2026-08-21",
+        "price": 99.2,
+        "yield": 8.48
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE528G08352",
+    "ticker": "YESBANK 9.50 NCD",
+    "issuerName": "Yes Bank Ltd",
+    "issuerType": "Bank",
+    "instrumentType": "NCD",
+    "bidPrice": -0.02,
+    "askPrice": 0.04,
+    "lastTradedPrice": 0.01,
+    "dayChangePercent": 0.08,
+    "ytm": 0,
+    "currentYield": 95000.0,
+    "couponRate": 9.5,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2018-12-31",
+    "issuePrice": 1000,
+    "redemptionDate": "2027-12-31",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 1.22,
+    "macaulayDuration": 1.26,
+    "convexity": 1.71,
+    "creditRating": "D",
+    "ratingAgency": "ICRA",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 16.62,
+    "outstandingIssueSize": 500000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Banking",
+    "daysToMaturity": 495,
+    "maturityYears": 1.36,
+    "couponPaymentDates": [
+      "2027-01-01",
+      "2027-07-02",
+      "2027-12-31"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 0.0249,
+        "yield": 0.0266
+      },
+      {
+        "date": "2026-07-21",
+        "price": 0.0914,
+        "yield": 0.0149
+      },
+      {
+        "date": "2026-07-22",
+        "price": 0.0082,
+        "yield": 0.0186
+      },
+      {
+        "date": "2026-07-23",
+        "price": 0.0594,
+        "yield": 0.0106
+      },
+      {
+        "date": "2026-07-24",
+        "price": 0.0161,
+        "yield": 0.0088
+      },
+      {
+        "date": "2026-07-27",
+        "price": -0.0707,
+        "yield": 0.0153
+      },
+      {
+        "date": "2026-07-28",
+        "price": -0.0475,
+        "yield": 0.0142
+      },
+      {
+        "date": "2026-07-29",
+        "price": -0.0314,
+        "yield": 0.0065
+      },
+      {
+        "date": "2026-07-30",
+        "price": -0.0885,
+        "yield": 0.0023
+      },
+      {
+        "date": "2026-07-31",
+        "price": -0.1286,
+        "yield": 0.004
+      },
+      {
+        "date": "2026-08-03",
+        "price": -0.0603,
+        "yield": -0.0003
+      },
+      {
+        "date": "2026-08-04",
+        "price": -0.0974,
+        "yield": -0.0034
+      },
+      {
+        "date": "2026-08-05",
+        "price": -0.0049,
+        "yield": -0.0081
+      },
+      {
+        "date": "2026-08-06",
+        "price": 0.0641,
+        "yield": 0.0031
+      },
+      {
+        "date": "2026-08-07",
+        "price": 0.0394,
+        "yield": 0.0094
+      },
+      {
+        "date": "2026-08-10",
+        "price": 0.0961,
+        "yield": 0.0099
+      },
+      {
+        "date": "2026-08-11",
+        "price": 0.0603,
+        "yield": 0.009
+      },
+      {
+        "date": "2026-08-12",
+        "price": 0.05,
+        "yield": -0.0009
+      },
+      {
+        "date": "2026-08-13",
+        "price": -0.0088,
+        "yield": -0.0059
+      },
+      {
+        "date": "2026-08-14",
+        "price": -0.0,
+        "yield": 0.0052
+      },
+      {
+        "date": "2026-08-17",
+        "price": 0.0364,
+        "yield": -0.0017
+      },
+      {
+        "date": "2026-08-18",
+        "price": 0.0378,
+        "yield": -0.0007
+      },
+      {
+        "date": "2026-08-19",
+        "price": 0.025,
+        "yield": -0.0058
+      },
+      {
+        "date": "2026-08-20",
+        "price": -0.0264,
+        "yield": 0.0054
+      },
+      {
+        "date": "2026-08-21",
+        "price": 0.01,
+        "yield": 0
+      }
+    ],
+    "indentureDocUrl": "#"
+  },
+  {
+    "isin": "INE528G08394",
+    "ticker": "YESBANK 9.00 NCD",
+    "issuerName": "Yes Bank Ltd",
+    "issuerType": "Bank",
+    "instrumentType": "NCD",
+    "bidPrice": -0.02,
+    "askPrice": 0.04,
+    "lastTradedPrice": 0.01,
+    "dayChangePercent": -0.07,
+    "ytm": 0,
+    "currentYield": 90000.0,
+    "couponRate": 9.0,
+    "couponType": "Fixed",
+    "couponFrequency": "Semi-Annual",
+    "floatingBenchmark": null,
+    "faceValue": 1000,
+    "minLotSize": 1,
+    "issueDate": "2018-12-31",
+    "issuePrice": 1000,
+    "redemptionDate": "2028-12-31",
+    "redemptionPrice": 1000,
+    "modifiedDuration": 2.12,
+    "macaulayDuration": 2.19,
+    "convexity": 5.18,
+    "creditRating": "D",
+    "ratingAgency": "ICRA",
+    "ratingOutlook": "Stable",
+    "ratingDate": "2026-07-31",
+    "seniority": "Senior",
+    "securedStatus": "Unsecured",
+    "callable": false,
+    "callDate": null,
+    "callPrice": null,
+    "puttable": false,
+    "putDate": null,
+    "putPrice": null,
+    "dayCountConvention": "Actual/365",
+    "accruedInterestApplicable": true,
+    "accruedInterestAmount": 15.75,
+    "outstandingIssueSize": 50000,
+    "listingExchange": "NSE/BSE",
+    "sector": "Banking",
+    "daysToMaturity": 861,
+    "maturityYears": 2.36,
+    "couponPaymentDates": [
+      "2027-01-03",
+      "2027-07-04",
+      "2028-01-02",
+      "2028-07-02",
+      "2028-12-31"
+    ],
+    "priceHistory": [
+      {
+        "date": "2026-07-20",
+        "price": 0.0249,
+        "yield": 0.0266
+      },
+      {
+        "date": "2026-07-21",
+        "price": 0.0914,
+        "yield": 0.0149
+      },
+      {
+        "date": "2026-07-22",
+        "price": 0.0082,
+        "yield": 0.0186
+      },
+      {
+        "date": "2026-07-23",
+        "price": 0.0594,
+        "yield": 0.0106
+      },
+      {
+        "date": "2026-07-24",
+        "price": 0.0161,
+        "yield": 0.0088
+      },
+      {
+        "date": "2026-07-27",
+        "price": -0.0707,
+        "yield": 0.0153
+      },
+      {
+        "date": "2026-07-28",
+        "price": -0.0475,
+        "yield": 0.0142
+      },
+      {
+        "date": "2026-07-29",
+        "price": -0.0314,
+        "yield": 0.0065
+      },
+      {
+        "date": "2026-07-30",
+        "price": -0.0885,
+        "yield": 0.0023
+      },
+      {
+        "date": "2026-07-31",
+        "price": -0.1286,
+        "yield": 0.004
+      },
+      {
+        "date": "2026-08-03",
+        "price": -0.0603,
+        "yield": -0.0003
+      },
+      {
+        "date": "2026-08-04",
+        "price": -0.0974,
+        "yield": -0.0034
+      },
+      {
+        "date": "2026-08-05",
+        "price": -0.0049,
+        "yield": -0.0081
+      },
+      {
+        "date": "2026-08-06",
+        "price": 0.0641,
+        "yield": 0.0031
+      },
+      {
+        "date": "2026-08-07",
+        "price": 0.0394,
+        "yield": 0.0094
+      },
+      {
+        "date": "2026-08-10",
+        "price": 0.0961,
+        "yield": 0.0099
+      },
+      {
+        "date": "2026-08-11",
+        "price": 0.0603,
+        "yield": 0.009
+      },
+      {
+        "date": "2026-08-12",
+        "price": 0.05,
+        "yield": -0.0009
+      },
+      {
+        "date": "2026-08-13",
+        "price": -0.0088,
+        "yield": -0.0059
+      },
+      {
+        "date": "2026-08-14",
+        "price": -0.0,
+        "yield": 0.0052
+      },
+      {
+        "date": "2026-08-17",
+        "price": 0.0364,
+        "yield": -0.0017
+      },
+      {
+        "date": "2026-08-18",
+        "price": 0.0378,
+        "yield": -0.0007
+      },
+      {
+        "date": "2026-08-19",
+        "price": 0.025,
+        "yield": -0.0058
+      },
+      {
+        "date": "2026-08-20",
+        "price": -0.0264,
+        "yield": 0.0054
+      },
+      {
+        "date": "2026-08-21",
+        "price": 0.01,
+        "yield": 0
+      }
+    ],
+    "indentureDocUrl": "#"
   }
 ]
