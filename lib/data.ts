@@ -222,13 +222,20 @@ export function getCashFlowSchedule(isin: string): CashFlow[] {
   });
 }
 
-function lotCost(lots: Lot[], quantity: number, method: CostingMethod): number {
+function lotCost(
+  lots: Lot[],
+  quantity: number,
+  method: CostingMethod,
+  faceValue: number = 100,
+): number {
+  // Convert lot prices (which are expressed per 100 of face) into rupee amounts.
+  // Returned cost is in INR.
   if (quantity <= 0 || lots.length === 0) return 0;
+  const faceFactor = faceValue / 100;
   if (method === "Weighted Average") {
     const totalQty = lots.reduce((s, l) => s + l.quantity, 0);
-    const avg =
-      lots.reduce((s, l) => s + l.quantity * l.price, 0) / (totalQty || 1);
-    return avg * quantity;
+    const avgPricePer100 = lots.reduce((s, l) => s + l.quantity * l.price, 0) / (totalQty || 1);
+    return avgPricePer100 * faceFactor * quantity;
   }
   const ordered =
     method === "FIFO"
@@ -239,7 +246,7 @@ function lotCost(lots: Lot[], quantity: number, method: CostingMethod): number {
   for (const lot of ordered) {
     if (remaining <= 0) break;
     const take = Math.min(remaining, lot.quantity);
-    cost += take * lot.price;
+    cost += take * lot.price * faceFactor;
     remaining -= take;
   }
   return cost;
@@ -249,7 +256,9 @@ export function getHoldingCost(
   holding: Holding,
   method: CostingMethod = holding.costingMethod,
 ): { unitCost: number; totalCost: number } {
-  const totalCost = lotCost(holding.lots, holding.quantity, method);
+  const bond = getBondByISIN(holding.isin);
+  const faceValue = bond ? bond.faceValue : 100;
+  const totalCost = lotCost(holding.lots, holding.quantity, method, faceValue);
   return {
     totalCost,
     unitCost: holding.quantity ? totalCost / holding.quantity : 0,
@@ -282,10 +291,10 @@ export function getPortfolioValueSeries(
       const px =
         [...bond.priceHistory].reverse().find((p) => p.date <= date)?.price ??
         bond.lastTradedPrice;
-      const notional = bond.faceValue / 100;
-      value += (px / 100) * bond.faceValue * qty;
-      invested +=
-        lotCost(lots, qty, method ?? h.costingMethod) * notional;
+        // price is quoted per 100 of face value -> convert to INR per unit
+        const pricePerUnit = px * (bond.faceValue / 100);
+        value += pricePerUnit * qty;
+        invested += lotCost(lots, qty, method ?? h.costingMethod, bond.faceValue);
     }
     return { date, value, invested };
   });
@@ -303,7 +312,7 @@ export function getPortfolioAllocationBySector(clientId: string = DEMO_CLIENT_ID
   for (const holding of portfolio.holdings) {
     const bond = getBondByISIN(holding.isin);
     if (!bond) continue;
-    const value = (bond.lastTradedPrice / 100) * bond.faceValue * holding.quantity;
+    const value = bond.lastTradedPrice * (bond.faceValue / 100) * holding.quantity;
     sectorMap.set(bond.sector, (sectorMap.get(bond.sector) || 0) + value);
   }
 
@@ -318,7 +327,7 @@ export function getPortfolioAllocationByRating(clientId: string = DEMO_CLIENT_ID
   for (const holding of portfolio.holdings) {
     const bond = getBondByISIN(holding.isin);
     if (!bond) continue;
-    const value = (bond.lastTradedPrice / 100) * bond.faceValue * holding.quantity;
+    const value = bond.lastTradedPrice * (bond.faceValue / 100) * holding.quantity;
     ratingMap.set(bond.creditRating, (ratingMap.get(bond.creditRating) || 0) + value);
   }
 
@@ -327,10 +336,12 @@ export function getPortfolioAllocationByRating(clientId: string = DEMO_CLIENT_ID
 
 export function getHoldingMTM(holding: any, bond: Bond) {
   const { unitCost } = getHoldingCost(holding);
-  const currentPrice = bond.lastTradedPrice / 100;
-  const mtmPerUnit = currentPrice - unitCost;
-  const mtmTotal = mtmPerUnit * holding.quantity * bond.faceValue;
-  const mtmPercent = unitCost > 0 ? ((mtmPerUnit / unitCost) * 100) : 0;
+  // unitCost is INR per unit (we compute costs in INR). Convert current quoted price
+  // (per 100 of face) into INR per unit before computing MTM.
+  const currentPricePerUnit = bond.lastTradedPrice * (bond.faceValue / 100);
+  const mtmPerUnit = currentPricePerUnit - unitCost;
+  const mtmTotal = mtmPerUnit * holding.quantity;
+  const mtmPercent = unitCost > 0 ? (mtmPerUnit / unitCost) * 100 : 0;
   return { mtmPerUnit, mtmTotal, mtmPercent };
 }
 
@@ -341,7 +352,7 @@ export type TradeFilter = {
   to?: string; // ISO date 'YYYY-MM-DD'
   clientId?: string;
   isin?: string;
-  status?: Trade["status"];
+  status?: Trade["status"] | "All";
 };
 
 /** Filter trades by date range (inclusive), client, isin and status.
