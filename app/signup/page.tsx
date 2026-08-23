@@ -52,7 +52,7 @@ const emptyNominee = (): Nominee => ({
   name: "",
   relationship: "",
   dob: "",
-  percentage: "",
+  percentage: "100",
 });
 
 const initialState: FormState = {
@@ -67,8 +67,8 @@ const initialState: FormState = {
   pin: "",
   occupation: "",
   annualIncome: "",
-  addNominee: false,
-  nominees: [],
+  addNominee: true,
+  nominees: [emptyNominee()],
   bankName: "",
   accountNumber: "",
   ifsc: "",
@@ -110,15 +110,14 @@ export default function SignupPage() {
   const canAdvance = () => {
     if (step === 0) {
       const nomineeValid =
-        !form.addNominee ||
-        (form.nominees.length > 0 &&
-          form.nominees.every(
-            (nominee) =>
-              nominee.name &&
-              nominee.relationship &&
-              nominee.dob &&
-              nominee.percentage,
-          ));
+        form.nominees.length > 0 &&
+        form.nominees.every(
+          (nominee) =>
+            nominee.name &&
+            nominee.relationship &&
+            nominee.dob &&
+            nominee.percentage,
+        );
 
       return Boolean(
         form.fullName &&
@@ -141,17 +140,14 @@ export default function SignupPage() {
         form.bankName &&
           form.accountNumber &&
           form.ifsc &&
-          form.accountType &&
-          form.bankStatement,
+          form.accountType,
       );
     }
 
     if (step === 2) {
       return Boolean(
         form.pan &&
-          form.aadhaar &&
-          form.addressProof &&
-          form.idProof,
+          form.aadhaar,
       );
     }
 
@@ -297,26 +293,11 @@ export default function SignupPage() {
                     <div className="rounded border border-border bg-[#fafafa] p-4">
                       <div className="mb-4 flex items-center justify-between gap-3">
                         <p className="text-sm font-semibold uppercase tracking-label text-muted">
-                          Nomination
+                          Nomination <span className="text-ubs-red">*</span>
                         </p>
-                        <label className="inline-flex items-center gap-2 text-xs font-medium text-ink">
-                          <input
-                            type="checkbox"
-                            className="h-3.5 w-3.5 accent-ubs-red"
-                            checked={form.addNominee}
-                            onChange={(event) => {
-                              const checked = event.target.checked;
-                              updateField("addNominee", checked);
-                              if (checked && form.nominees.length === 0) {
-                                updateField("nominees", [emptyNominee()]);
-                              }
-                              if (!checked) {
-                                updateField("nominees", []);
-                              }
-                            }}
-                          />
-                          Do you want to add a nominee?
-                        </label>
+                        <span className="text-xs font-medium text-muted">
+                          One nominee is required
+                        </span>
                       </div>
 
                       {form.addNominee && (
@@ -389,7 +370,7 @@ export default function SignupPage() {
 
                   <div className="rounded border border-dashed border-border bg-[#fafafa] p-4">
                     <label className="flex cursor-pointer items-center justify-between gap-3 rounded border border-border bg-white px-3 py-2 text-sm font-medium text-ink hover:border-ink">
-                      <span>Upload bank statement</span>
+                      <span>Upload bank statement <span className="font-normal text-muted">(optional)</span></span>
                       <input
                         type="file"
                         className="hidden"
@@ -400,6 +381,7 @@ export default function SignupPage() {
                         }}
                       />
                     </label>
+                    <p className="mt-2 text-xs text-muted">PDF, JPG or PNG</p>
                     {form.bankStatement && (
                       <p className="mt-2 text-xs text-muted">Selected: {form.bankStatement}</p>
                     )}
@@ -424,13 +406,11 @@ export default function SignupPage() {
                   <div className="grid gap-4 md:grid-cols-2">
                     <UploadProofField
                       label="Address proof"
-                      required
                       value={form.addressProof}
                       onChange={(value) => updateField("addressProof", value)}
                     />
                     <UploadProofField
                       label="ID proof"
-                      required
                       value={form.idProof}
                       onChange={(value) => updateField("idProof", value)}
                     />
@@ -735,7 +715,7 @@ function UploadProofField({
 
       <div className="rounded border border-dashed border-border bg-[#fafafa] p-3">
         <label className="flex cursor-pointer items-center justify-between gap-3 rounded border border-border bg-white px-3 py-2 text-sm font-medium text-ink hover:border-ink">
-          <span>{value ? value : "Upload document"}</span>
+          <span>{value ? value : "Upload document"} {!value && <span className="font-normal text-muted">(optional)</span>}</span>
           <input
             type="file"
             className="hidden"
@@ -747,6 +727,7 @@ function UploadProofField({
             }}
           />
         </label>
+        <p className="mt-2 text-xs text-muted">PDF, JPG or PNG</p>
       </div>
     </label>
   );
