@@ -28,18 +28,8 @@ export function AdminNavbar() {
           >
             Limits
           </Link>
-          <Link
-            href="/admin/commissions"
-            className="text-sm font-semibold text-white hover:text-ubs-red transition-colors"
-          >
-            Commissions
-          </Link>
-          <Link
-            href="/admin/risk"
-            className="text-sm font-semibold text-white hover:text-ubs-red transition-colors"
-          >
-            Risk
-          </Link>
+         
+         
           <Link
             href="/admin/kyc"
             className="text-sm font-semibold text-white hover:text-ubs-red transition-colors"
