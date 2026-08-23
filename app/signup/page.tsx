@@ -370,7 +370,7 @@ export default function SignupPage() {
 
                   <div className="rounded border border-dashed border-border bg-[#fafafa] p-4">
                     <label className="flex cursor-pointer items-center justify-between gap-3 rounded border border-border bg-white px-3 py-2 text-sm font-medium text-ink hover:border-ink">
-                      <span>Upload bank statement <span className="font-normal text-muted">(optional)</span></span>
+                      <span>Upload bank statement</span>
                       <input
                         type="file"
                         className="hidden"
@@ -715,7 +715,7 @@ function UploadProofField({
 
       <div className="rounded border border-dashed border-border bg-[#fafafa] p-3">
         <label className="flex cursor-pointer items-center justify-between gap-3 rounded border border-border bg-white px-3 py-2 text-sm font-medium text-ink hover:border-ink">
-          <span>{value ? value : "Upload document"} {!value && <span className="font-normal text-muted">(optional)</span>}</span>
+          <span>{value ? value : "Upload document"}</span>
           <input
             type="file"
             className="hidden"
