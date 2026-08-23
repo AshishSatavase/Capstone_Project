@@ -145,6 +145,17 @@ function InstrumentPageContent({
     }));
   }, [filteredHistory]);
 
+  const depthBids = bond.marketDepth?.bids ?? [];
+  const depthAsks = bond.marketDepth?.asks ?? [];
+  const totalBidQuantity = depthBids.reduce((sum, level) => sum + level.quantity, 0);
+  const totalAskQuantity = depthAsks.reduce((sum, level) => sum + level.quantity, 0);
+  const totalDepthQty = totalBidQuantity + totalAskQuantity;
+  const bidPercentage = totalDepthQty > 0 ? (totalBidQuantity / totalDepthQty) * 100 : 50;
+  const askPercentage = 100 - bidPercentage;
+  const maxBidQty = Math.max(...depthBids.map((level) => level.quantity), 1);
+  const maxAskQty = Math.max(...depthAsks.map((level) => level.quantity), 1);
+  const maxDepthRows = Math.max(depthBids.length, depthAsks.length);
+
   return (
     <div className="space-y-6 p-6 pb-28">
       <div className="flex items-center gap-4">
@@ -249,6 +260,91 @@ function InstrumentPageContent({
                     {range}
                   </button>
                 ))}
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <div className="mb-4">
+                <h3 className="text-sm font-semibold uppercase tracking-label text-muted">Market Depth</h3>
+              </div>
+
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                <div className="rounded border border-border p-3">
+                  <p className="text-2xs font-semibold uppercase tracking-label text-muted">Bid</p>
+                  <p className="mt-1 text-lg font-bold text-positive">
+                    {totalBidQuantity.toLocaleString("en-IN")}
+                  </p>
+                </div>
+                <div className="rounded border border-border p-3">
+                  <p className="text-2xs font-semibold uppercase tracking-label text-muted">Ask</p>
+                  <p className="mt-1 text-lg font-bold text-ubs-red">
+                    {totalAskQuantity.toLocaleString("en-IN")}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <div className="mb-2 flex items-center justify-between text-2xs font-semibold uppercase tracking-label text-muted">
+                  <span>Bid / Ask Ratio</span>
+                  <span>{bidPercentage.toFixed(1)}% / {askPercentage.toFixed(1)}%</span>
+                </div>
+                <div className="flex h-2 w-full overflow-hidden rounded bg-border">
+                  <div className="bg-positive" style={{ width: `${bidPercentage}%` }} />
+                  <div className="bg-ubs-red" style={{ width: `${askPercentage}%` }} />
+                </div>
+              </div>
+
+              <div className="mt-4 grid grid-cols-1 gap-2 lg:grid-cols-2">
+                <div className="grid grid-cols-3 gap-2 px-2 text-2xs font-semibold uppercase tracking-label text-muted">
+                  <span>Quantity</span>
+                  <span className="text-center">Orders</span>
+                  <span className="text-right">Price</span>
+                </div>
+                <div className="grid grid-cols-3 gap-2 px-2 text-2xs font-semibold uppercase tracking-label text-muted">
+                  <span>Price</span>
+                  <span className="text-center">Orders</span>
+                  <span className="text-right">Quantity</span>
+                </div>
+              </div>
+
+              <div className="mt-2 space-y-2">
+                {Array.from({ length: maxDepthRows }).map((_, index) => {
+                  const bid = depthBids[index];
+                  const ask = depthAsks[index];
+                  const bidWidth = bid ? (bid.quantity / maxBidQty) * 100 : 0;
+                  const askWidth = ask ? (ask.quantity / maxAskQty) * 100 : 0;
+                  return (
+                    <div key={`depth-row-${index}`} className="grid grid-cols-1 gap-2 lg:grid-cols-2">
+                      <div className="relative overflow-hidden rounded border border-border">
+                        {bid && (
+                          <div
+                            className="absolute inset-y-0 left-0 bg-positive/10"
+                            style={{ width: `${bidWidth}%` }}
+                          />
+                        )}
+                        <div className="relative grid grid-cols-3 gap-2 px-2 py-2 text-xs">
+                          <span className="font-semibold text-ink">{bid ? bid.quantity.toLocaleString("en-IN") : "—"}</span>
+                          <span className="text-center text-muted">{bid ? bid.orders.toLocaleString("en-IN") : "—"}</span>
+                          <span className="text-right font-semibold text-positive">{bid ? bid.price.toFixed(2) : "—"}</span>
+                        </div>
+                      </div>
+
+                      <div className="relative overflow-hidden rounded border border-border">
+                        {ask && (
+                          <div
+                            className="absolute inset-y-0 right-0 bg-ubs-red/10"
+                            style={{ width: `${askWidth}%` }}
+                          />
+                        )}
+                        <div className="relative grid grid-cols-3 gap-2 px-2 py-2 text-xs">
+                          <span className="font-semibold text-ubs-red">{ask ? ask.price.toFixed(2) : "—"}</span>
+                          <span className="text-center text-muted">{ask ? ask.orders.toLocaleString("en-IN") : "—"}</span>
+                          <span className="text-right font-semibold text-ink">{ask ? ask.quantity.toLocaleString("en-IN") : "—"}</span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </Card>
 

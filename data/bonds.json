@@ -390,7 +390,53 @@
         "yield": 6.92
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 101.12,
+          "quantity": 46400,
+          "orders": 164
+        },
+        {
+          "price": 101.08,
+          "quantity": 32500,
+          "orders": 83
+        },
+        {
+          "price": 101.03,
+          "quantity": 20900,
+          "orders": 34
+        },
+        {
+          "price": 100.97,
+          "quantity": 11100,
+          "orders": 10
+        }
+      ],
+      "asks": [
+        {
+          "price": 101.18,
+          "quantity": 50200,
+          "orders": 177
+        },
+        {
+          "price": 101.22,
+          "quantity": 35200,
+          "orders": 90
+        },
+        {
+          "price": 101.27,
+          "quantity": 22600,
+          "orders": 37
+        },
+        {
+          "price": 101.33,
+          "quantity": 12100,
+          "orders": 11
+        }
+      ]
+    }
   },
   {
     "isin": "IN0020240038",
@@ -398,8 +444,8 @@
     "issuerName": "Government of India",
     "issuerType": "Sovereign",
     "instrumentType": "G-Sec",
-    "bidPrice": 102.04,
-    "askPrice": 102.1,
+    "bidPrice": 102.05,
+    "askPrice": 102.11,
     "lastTradedPrice": 102.08,
     "dayChangePercent": -0.06,
     "ytm": 6.81,
@@ -776,7 +822,53 @@
         "yield": 6.81
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 102.05,
+          "quantity": 39900,
+          "orders": 139
+        },
+        {
+          "price": 102,
+          "quantity": 27900,
+          "orders": 70
+        },
+        {
+          "price": 101.94,
+          "quantity": 18000,
+          "orders": 29
+        },
+        {
+          "price": 101.87,
+          "quantity": 9600,
+          "orders": 9
+        }
+      ],
+      "asks": [
+        {
+          "price": 102.11,
+          "quantity": 46900,
+          "orders": 163
+        },
+        {
+          "price": 102.16,
+          "quantity": 32800,
+          "orders": 82
+        },
+        {
+          "price": 102.22,
+          "quantity": 21100,
+          "orders": 34
+        },
+        {
+          "price": 102.29,
+          "quantity": 11200,
+          "orders": 10
+        }
+      ]
+    }
   },
   {
     "isin": "IN0020260024",
@@ -784,8 +876,8 @@
     "issuerName": "Government of India",
     "issuerType": "Sovereign",
     "instrumentType": "G-Sec",
-    "bidPrice": 100.22,
-    "askPrice": 100.28,
+    "bidPrice": 100.21,
+    "askPrice": 100.29,
     "lastTradedPrice": 100.25,
     "dayChangePercent": 0.02,
     "ytm": 6.55,
@@ -1173,7 +1265,53 @@
         "yield": 6.55
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 100.21,
+          "quantity": 39900,
+          "orders": 130
+        },
+        {
+          "price": 100.15,
+          "quantity": 27900,
+          "orders": 66
+        },
+        {
+          "price": 100.09,
+          "quantity": 18000,
+          "orders": 27
+        },
+        {
+          "price": 100,
+          "quantity": 9600,
+          "orders": 8
+        }
+      ],
+      "asks": [
+        {
+          "price": 100.29,
+          "quantity": 46900,
+          "orders": 153
+        },
+        {
+          "price": 100.35,
+          "quantity": 32800,
+          "orders": 77
+        },
+        {
+          "price": 100.41,
+          "quantity": 21100,
+          "orders": 32
+        },
+        {
+          "price": 100.5,
+          "quantity": 11200,
+          "orders": 10
+        }
+      ]
+    }
   },
   {
     "isin": "IN0020260917",
@@ -1181,8 +1319,8 @@
     "issuerName": "Government of India",
     "issuerType": "Sovereign",
     "instrumentType": "T-Bill",
-    "bidPrice": 94.12,
-    "askPrice": 94.18,
+    "bidPrice": 94.11,
+    "askPrice": 94.19,
     "lastTradedPrice": 94.15,
     "dayChangePercent": 0.03,
     "ytm": 6.48,
@@ -1543,7 +1681,53 @@
         "yield": 6.48
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 94.11,
+          "quantity": 42300,
+          "orders": 134
+        },
+        {
+          "price": 94.04,
+          "quantity": 29600,
+          "orders": 68
+        },
+        {
+          "price": 93.97,
+          "quantity": 19100,
+          "orders": 28
+        },
+        {
+          "price": 93.87,
+          "quantity": 10200,
+          "orders": 8
+        }
+      ],
+      "asks": [
+        {
+          "price": 94.19,
+          "quantity": 36100,
+          "orders": 114
+        },
+        {
+          "price": 94.26,
+          "quantity": 25200,
+          "orders": 57
+        },
+        {
+          "price": 94.33,
+          "quantity": 16200,
+          "orders": 24
+        },
+        {
+          "price": 94.43,
+          "quantity": 8700,
+          "orders": 7
+        }
+      ]
+    }
   },
   {
     "isin": "IN0020260925",
@@ -1551,8 +1735,8 @@
     "issuerName": "Government of India",
     "issuerType": "Sovereign",
     "instrumentType": "T-Bill",
-    "bidPrice": 98.38,
-    "askPrice": 98.42,
+    "bidPrice": 98.36,
+    "askPrice": 98.44,
     "lastTradedPrice": 98.4,
     "dayChangePercent": 0.01,
     "ytm": 6.41,
@@ -1913,7 +2097,53 @@
         "yield": 6.41
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 98.36,
+          "quantity": 33100,
+          "orders": 104
+        },
+        {
+          "price": 98.29,
+          "quantity": 23200,
+          "orders": 52
+        },
+        {
+          "price": 98.22,
+          "quantity": 14900,
+          "orders": 21
+        },
+        {
+          "price": 98.12,
+          "quantity": 7900,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 98.44,
+          "quantity": 37300,
+          "orders": 117
+        },
+        {
+          "price": 98.51,
+          "quantity": 26100,
+          "orders": 59
+        },
+        {
+          "price": 98.58,
+          "quantity": 16800,
+          "orders": 24
+        },
+        {
+          "price": 98.68,
+          "quantity": 9000,
+          "orders": 7
+        }
+      ]
+    }
   },
   {
     "isin": "IN2220260014",
@@ -2304,7 +2534,53 @@
         "yield": 7.36
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.62,
+          "quantity": 28100,
+          "orders": 81
+        },
+        {
+          "price": 99.53,
+          "quantity": 19600,
+          "orders": 40
+        },
+        {
+          "price": 99.43,
+          "quantity": 12600,
+          "orders": 17
+        },
+        {
+          "price": 99.29,
+          "quantity": 6700,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.74,
+          "quantity": 32900,
+          "orders": 94
+        },
+        {
+          "price": 99.83,
+          "quantity": 23100,
+          "orders": 48
+        },
+        {
+          "price": 99.93,
+          "quantity": 14800,
+          "orders": 20
+        },
+        {
+          "price": 100.07,
+          "quantity": 7900,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "IN3120250042",
@@ -2312,7 +2588,7 @@
     "issuerName": "State of Gujarat",
     "issuerType": "State",
     "instrumentType": "SDL",
-    "bidPrice": 100.08,
+    "bidPrice": 100.06,
     "askPrice": 100.18,
     "lastTradedPrice": 100.12,
     "dayChangePercent": 0.05,
@@ -2694,7 +2970,53 @@
         "yield": 7.26
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 100.06,
+          "quantity": 30000,
+          "orders": 85
+        },
+        {
+          "price": 99.97,
+          "quantity": 21000,
+          "orders": 43
+        },
+        {
+          "price": 99.87,
+          "quantity": 13500,
+          "orders": 18
+        },
+        {
+          "price": 99.73,
+          "quantity": 7200,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 100.18,
+          "quantity": 26600,
+          "orders": 75
+        },
+        {
+          "price": 100.27,
+          "quantity": 18600,
+          "orders": 38
+        },
+        {
+          "price": 100.37,
+          "quantity": 12000,
+          "orders": 16
+        },
+        {
+          "price": 100.51,
+          "quantity": 6400,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE020B08BH6",
@@ -2702,8 +3024,8 @@
     "issuerName": "REC Limited",
     "issuerType": "PSU",
     "instrumentType": "NCD",
-    "bidPrice": 101.42,
-    "askPrice": 101.58,
+    "bidPrice": 101.43,
+    "askPrice": 101.57,
     "lastTradedPrice": 101.5,
     "dayChangePercent": -0.12,
     "ytm": 7.41,
@@ -3071,7 +3393,53 @@
         "yield": 7.41
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 101.43,
+          "quantity": 25260,
+          "orders": 70
+        },
+        {
+          "price": 101.32,
+          "quantity": 17682,
+          "orders": 35
+        },
+        {
+          "price": 101.2,
+          "quantity": 11367,
+          "orders": 14
+        },
+        {
+          "price": 101.04,
+          "quantity": 6062,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 101.57,
+          "quantity": 22400,
+          "orders": 62
+        },
+        {
+          "price": 101.68,
+          "quantity": 15680,
+          "orders": 31
+        },
+        {
+          "price": 101.8,
+          "quantity": 10080,
+          "orders": 13
+        },
+        {
+          "price": 101.96,
+          "quantity": 5376,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE134E08JS8",
@@ -3445,7 +3813,53 @@
         "yield": 7.28
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 100.88,
+          "quantity": 18839,
+          "orders": 52
+        },
+        {
+          "price": 100.77,
+          "quantity": 13187,
+          "orders": 26
+        },
+        {
+          "price": 100.65,
+          "quantity": 8477,
+          "orders": 11
+        },
+        {
+          "price": 100.49,
+          "quantity": 4521,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 101.02,
+          "quantity": 22115,
+          "orders": 61
+        },
+        {
+          "price": 101.13,
+          "quantity": 15481,
+          "orders": 31
+        },
+        {
+          "price": 101.25,
+          "quantity": 9952,
+          "orders": 13
+        },
+        {
+          "price": 101.41,
+          "quantity": 5308,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE906B07HC3",
@@ -3453,8 +3867,8 @@
     "issuerName": "National Highways Authority of India",
     "issuerType": "PSU",
     "instrumentType": "NCD",
-    "bidPrice": 99.1,
-    "askPrice": 99.28,
+    "bidPrice": 99.13,
+    "askPrice": 99.27,
     "lastTradedPrice": 99.2,
     "dayChangePercent": -0.19,
     "ytm": 7.86,
@@ -3829,7 +4243,53 @@
         "yield": 7.86
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.13,
+          "quantity": 21935,
+          "orders": 61
+        },
+        {
+          "price": 99.02,
+          "quantity": 15354,
+          "orders": 31
+        },
+        {
+          "price": 98.9,
+          "quantity": 9871,
+          "orders": 13
+        },
+        {
+          "price": 98.74,
+          "quantity": 5264,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.27,
+          "quantity": 20247,
+          "orders": 56
+        },
+        {
+          "price": 99.38,
+          "quantity": 14173,
+          "orders": 28
+        },
+        {
+          "price": 99.5,
+          "quantity": 9111,
+          "orders": 12
+        },
+        {
+          "price": 99.66,
+          "quantity": 4859,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE053F07AA1",
@@ -4204,7 +4664,53 @@
         "yield": 7.33
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 100.34,
+          "quantity": 26301,
+          "orders": 74
+        },
+        {
+          "price": 100.24,
+          "quantity": 18411,
+          "orders": 38
+        },
+        {
+          "price": 100.13,
+          "quantity": 11835,
+          "orders": 15
+        },
+        {
+          "price": 99.98,
+          "quantity": 6312,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 100.46,
+          "quantity": 23323,
+          "orders": 66
+        },
+        {
+          "price": 100.56,
+          "quantity": 16326,
+          "orders": 33
+        },
+        {
+          "price": 100.67,
+          "quantity": 10495,
+          "orders": 14
+        },
+        {
+          "price": 100.82,
+          "quantity": 5598,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE031A07AB2",
@@ -4212,8 +4718,8 @@
     "issuerName": "Housing & Urban Development Corporation",
     "issuerType": "PSU",
     "instrumentType": "NCD",
-    "bidPrice": 99.72,
-    "askPrice": 99.88,
+    "bidPrice": 99.73,
+    "askPrice": 99.87,
     "lastTradedPrice": 99.8,
     "dayChangePercent": -0.04,
     "ytm": 7.59,
@@ -4580,7 +5086,53 @@
         "yield": 7.59
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.73,
+          "quantity": 19120,
+          "orders": 51
+        },
+        {
+          "price": 99.61,
+          "quantity": 13384,
+          "orders": 26
+        },
+        {
+          "price": 99.48,
+          "quantity": 8604,
+          "orders": 11
+        },
+        {
+          "price": 99.31,
+          "quantity": 4589,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.87,
+          "quantity": 16956,
+          "orders": 45
+        },
+        {
+          "price": 99.99,
+          "quantity": 11869,
+          "orders": 23
+        },
+        {
+          "price": 100.12,
+          "quantity": 7630,
+          "orders": 9
+        },
+        {
+          "price": 100.29,
+          "quantity": 4069,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE002A08CD4",
@@ -4954,7 +5506,53 @@
         "yield": 7.42
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.48,
+          "quantity": 20228,
+          "orders": 55
+        },
+        {
+          "price": 99.37,
+          "quantity": 14160,
+          "orders": 28
+        },
+        {
+          "price": 99.25,
+          "quantity": 9103,
+          "orders": 11
+        },
+        {
+          "price": 99.09,
+          "quantity": 4855,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.62,
+          "quantity": 17232,
+          "orders": 47
+        },
+        {
+          "price": 99.73,
+          "quantity": 12062,
+          "orders": 24
+        },
+        {
+          "price": 99.85,
+          "quantity": 7754,
+          "orders": 10
+        },
+        {
+          "price": 100.01,
+          "quantity": 4136,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE018A08FG9",
@@ -4962,7 +5560,7 @@
     "issuerName": "Larsen & Toubro Ltd",
     "issuerType": "Corporate",
     "instrumentType": "NCD",
-    "bidPrice": 98.9,
+    "bidPrice": 98.92,
     "askPrice": 99.08,
     "lastTradedPrice": 99,
     "dayChangePercent": -0.15,
@@ -5331,7 +5929,53 @@
         "yield": 7.72
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 98.92,
+          "quantity": 19763,
+          "orders": 52
+        },
+        {
+          "price": 98.79,
+          "quantity": 13834,
+          "orders": 26
+        },
+        {
+          "price": 98.66,
+          "quantity": 8894,
+          "orders": 11
+        },
+        {
+          "price": 98.47,
+          "quantity": 4743,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.08,
+          "quantity": 23201,
+          "orders": 61
+        },
+        {
+          "price": 99.21,
+          "quantity": 16240,
+          "orders": 31
+        },
+        {
+          "price": 99.34,
+          "quantity": 10440,
+          "orders": 13
+        },
+        {
+          "price": 99.53,
+          "quantity": 5568,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE090A08AT1",
@@ -5339,8 +5983,8 @@
     "issuerName": "ICICI Bank Ltd",
     "issuerType": "Bank",
     "instrumentType": "AT1",
-    "bidPrice": 102.15,
-    "askPrice": 102.45,
+    "bidPrice": 102.23,
+    "askPrice": 102.37,
     "lastTradedPrice": 102.3,
     "dayChangePercent": -0.31,
     "ytm": 8.95,
@@ -5849,7 +6493,53 @@
         "yield": 8.95
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 102.23,
+          "quantity": 13718,
+          "orders": 38
+        },
+        {
+          "price": 102.11,
+          "quantity": 9603,
+          "orders": 19
+        },
+        {
+          "price": 101.98,
+          "quantity": 6173,
+          "orders": 8
+        },
+        {
+          "price": 101.81,
+          "quantity": 3292,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 102.37,
+          "quantity": 16104,
+          "orders": 44
+        },
+        {
+          "price": 102.49,
+          "quantity": 11273,
+          "orders": 22
+        },
+        {
+          "price": 102.62,
+          "quantity": 7247,
+          "orders": 9
+        },
+        {
+          "price": 102.79,
+          "quantity": 3865,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE062A08PQ2",
@@ -5857,8 +6547,8 @@
     "issuerName": "State Bank of India",
     "issuerType": "Bank",
     "instrumentType": "NCD",
-    "bidPrice": 100.55,
-    "askPrice": 100.72,
+    "bidPrice": 100.57,
+    "askPrice": 100.71,
     "lastTradedPrice": 100.64,
     "dayChangePercent": 0.09,
     "ytm": 7.78,
@@ -6228,7 +6918,53 @@
         "yield": 7.78
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 100.57,
+          "quantity": 22563,
+          "orders": 63
+        },
+        {
+          "price": 100.46,
+          "quantity": 15794,
+          "orders": 32
+        },
+        {
+          "price": 100.34,
+          "quantity": 10153,
+          "orders": 13
+        },
+        {
+          "price": 100.18,
+          "quantity": 5415,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 100.71,
+          "quantity": 20009,
+          "orders": 56
+        },
+        {
+          "price": 100.82,
+          "quantity": 14006,
+          "orders": 28
+        },
+        {
+          "price": 100.94,
+          "quantity": 9004,
+          "orders": 12
+        },
+        {
+          "price": 101.1,
+          "quantity": 4802,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE001A14CD8",
@@ -6236,8 +6972,8 @@
     "issuerName": "HDFC Bank Ltd",
     "issuerType": "Bank",
     "instrumentType": "CD",
-    "bidPrice": 96.82,
-    "askPrice": 96.9,
+    "bidPrice": 96.8,
+    "askPrice": 96.92,
     "lastTradedPrice": 96.86,
     "dayChangePercent": 0.02,
     "ytm": 6.72,
@@ -6598,7 +7334,53 @@
         "yield": 6.72
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 96.8,
+          "quantity": 27220,
+          "orders": 79
+        },
+        {
+          "price": 96.71,
+          "quantity": 19054,
+          "orders": 40
+        },
+        {
+          "price": 96.61,
+          "quantity": 12249,
+          "orders": 16
+        },
+        {
+          "price": 96.47,
+          "quantity": 6533,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 96.92,
+          "quantity": 27220,
+          "orders": 79
+        },
+        {
+          "price": 97.01,
+          "quantity": 19054,
+          "orders": 40
+        },
+        {
+          "price": 97.11,
+          "quantity": 12249,
+          "orders": 16
+        },
+        {
+          "price": 97.25,
+          "quantity": 6533,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE047A14CP3",
@@ -6606,8 +7388,8 @@
     "issuerName": "Tata Steel Ltd",
     "issuerType": "Corporate",
     "instrumentType": "CP",
-    "bidPrice": 98.05,
-    "askPrice": 98.14,
+    "bidPrice": 98.01,
+    "askPrice": 98.19,
     "lastTradedPrice": 98.1,
     "dayChangePercent": -0.05,
     "ytm": 7.85,
@@ -6968,7 +7750,53 @@
         "yield": 7.85
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 98.01,
+          "quantity": 13584,
+          "orders": 35
+        },
+        {
+          "price": 97.87,
+          "quantity": 9509,
+          "orders": 18
+        },
+        {
+          "price": 97.71,
+          "quantity": 6113,
+          "orders": 7
+        },
+        {
+          "price": 97.5,
+          "quantity": 3260,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 98.19,
+          "quantity": 12540,
+          "orders": 32
+        },
+        {
+          "price": 98.33,
+          "quantity": 8778,
+          "orders": 16
+        },
+        {
+          "price": 98.49,
+          "quantity": 5643,
+          "orders": 7
+        },
+        {
+          "price": 98.7,
+          "quantity": 3009,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "IN0020240126",
@@ -6976,8 +7804,8 @@
     "issuerName": "Government of India",
     "issuerType": "Sovereign",
     "instrumentType": "G-Sec",
-    "bidPrice": 97.77,
-    "askPrice": 97.83,
+    "bidPrice": 97.78,
+    "askPrice": 97.82,
     "lastTradedPrice": 97.8,
     "dayChangePercent": -0.06,
     "ytm": 7.19,
@@ -7161,7 +7989,53 @@
         "yield": 7.19
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 97.78,
+          "quantity": 46500,
+          "orders": 172
+        },
+        {
+          "price": 97.75,
+          "quantity": 32600,
+          "orders": 87
+        },
+        {
+          "price": 97.71,
+          "quantity": 20900,
+          "orders": 35
+        },
+        {
+          "price": 97.66,
+          "quantity": 11200,
+          "orders": 11
+        }
+      ],
+      "asks": [
+        {
+          "price": 97.82,
+          "quantity": 52500,
+          "orders": 194
+        },
+        {
+          "price": 97.85,
+          "quantity": 36700,
+          "orders": 98
+        },
+        {
+          "price": 97.89,
+          "quantity": 23600,
+          "orders": 40
+        },
+        {
+          "price": 97.94,
+          "quantity": 12600,
+          "orders": 12
+        }
+      ]
+    }
   },
   {
     "isin": "IN0020240019",
@@ -7169,8 +8043,8 @@
     "issuerName": "Government of India",
     "issuerType": "Sovereign",
     "instrumentType": "G-Sec",
-    "bidPrice": 99.67,
-    "askPrice": 99.73,
+    "bidPrice": 99.68,
+    "askPrice": 99.72,
     "lastTradedPrice": 99.7,
     "dayChangePercent": 0.1,
     "ytm": 7.15,
@@ -7353,7 +8227,53 @@
         "yield": 7.15
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.68,
+          "quantity": 48400,
+          "orders": 179
+        },
+        {
+          "price": 99.65,
+          "quantity": 33900,
+          "orders": 90
+        },
+        {
+          "price": 99.61,
+          "quantity": 21800,
+          "orders": 37
+        },
+        {
+          "price": 99.56,
+          "quantity": 11600,
+          "orders": 11
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.72,
+          "quantity": 52400,
+          "orders": 193
+        },
+        {
+          "price": 99.75,
+          "quantity": 36700,
+          "orders": 98
+        },
+        {
+          "price": 99.79,
+          "quantity": 23600,
+          "orders": 40
+        },
+        {
+          "price": 99.84,
+          "quantity": 12600,
+          "orders": 12
+        }
+      ]
+    }
   },
   {
     "isin": "IN2220190135",
@@ -7361,8 +8281,8 @@
     "issuerName": "Government of Maharashtra",
     "issuerType": "State Government",
     "instrumentType": "SDL",
-    "bidPrice": 100.57,
-    "askPrice": 100.63,
+    "bidPrice": 100.56,
+    "askPrice": 100.64,
     "lastTradedPrice": 100.6,
     "dayChangePercent": -0.08,
     "ytm": 6.77,
@@ -7537,7 +8457,53 @@
         "yield": 6.77
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 100.56,
+          "quantity": 31200,
+          "orders": 97
+        },
+        {
+          "price": 100.49,
+          "quantity": 21800,
+          "orders": 49
+        },
+        {
+          "price": 100.42,
+          "quantity": 14000,
+          "orders": 20
+        },
+        {
+          "price": 100.32,
+          "quantity": 7500,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 100.64,
+          "quantity": 35200,
+          "orders": 110
+        },
+        {
+          "price": 100.71,
+          "quantity": 24600,
+          "orders": 55
+        },
+        {
+          "price": 100.78,
+          "quantity": 15800,
+          "orders": 23
+        },
+        {
+          "price": 100.88,
+          "quantity": 8400,
+          "orders": 7
+        }
+      ]
+    }
   },
   {
     "isin": "INE040A16K8",
@@ -7545,8 +8511,8 @@
     "issuerName": "HDFC Bank Ltd",
     "issuerType": "Bank",
     "instrumentType": "CD",
-    "bidPrice": 97.27,
-    "askPrice": 97.33,
+    "bidPrice": 97.26,
+    "askPrice": 97.34,
     "lastTradedPrice": 97.3,
     "dayChangePercent": 0.1,
     "ytm": 7.3,
@@ -7712,7 +8678,53 @@
         "yield": 7.3
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 97.26,
+          "quantity": 32833,
+          "orders": 113
+        },
+        {
+          "price": 97.2,
+          "quantity": 22983,
+          "orders": 57
+        },
+        {
+          "price": 97.14,
+          "quantity": 14775,
+          "orders": 23
+        },
+        {
+          "price": 97.05,
+          "quantity": 7880,
+          "orders": 7
+        }
+      ],
+      "asks": [
+        {
+          "price": 97.34,
+          "quantity": 27969,
+          "orders": 96
+        },
+        {
+          "price": 97.4,
+          "quantity": 19578,
+          "orders": 49
+        },
+        {
+          "price": 97.46,
+          "quantity": 12586,
+          "orders": 20
+        },
+        {
+          "price": 97.55,
+          "quantity": 6713,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE261F16JA8",
@@ -7720,8 +8732,8 @@
     "issuerName": "National Bank for Agriculture and Rural Development",
     "issuerType": "Financial Institution",
     "instrumentType": "CD",
-    "bidPrice": 96.87,
-    "askPrice": 96.93,
+    "bidPrice": 96.86,
+    "askPrice": 96.94,
     "lastTradedPrice": 96.9,
     "dayChangePercent": -0.08,
     "ytm": 7.25,
@@ -7887,7 +8899,53 @@
         "yield": 7.25
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 96.86,
+          "quantity": 34820,
+          "orders": 118
+        },
+        {
+          "price": 96.8,
+          "quantity": 24374,
+          "orders": 59
+        },
+        {
+          "price": 96.74,
+          "quantity": 15669,
+          "orders": 24
+        },
+        {
+          "price": 96.65,
+          "quantity": 8357,
+          "orders": 7
+        }
+      ],
+      "asks": [
+        {
+          "price": 96.94,
+          "quantity": 29662,
+          "orders": 101
+        },
+        {
+          "price": 97,
+          "quantity": 20763,
+          "orders": 51
+        },
+        {
+          "price": 97.06,
+          "quantity": 13348,
+          "orders": 21
+        },
+        {
+          "price": 97.15,
+          "quantity": 7119,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE752E08783",
@@ -7895,8 +8953,8 @@
     "issuerName": "Power Grid Corporation of India Ltd",
     "issuerType": "PSU",
     "instrumentType": "Bond",
-    "bidPrice": 98.87,
-    "askPrice": 98.93,
+    "bidPrice": 98.86,
+    "askPrice": 98.94,
     "lastTradedPrice": 98.9,
     "dayChangePercent": 0.08,
     "ytm": 7.35,
@@ -8081,7 +9139,53 @@
         "yield": 7.35
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 98.86,
+          "quantity": 34889,
+          "orders": 118
+        },
+        {
+          "price": 98.8,
+          "quantity": 24423,
+          "orders": 60
+        },
+        {
+          "price": 98.74,
+          "quantity": 15700,
+          "orders": 25
+        },
+        {
+          "price": 98.65,
+          "quantity": 8373,
+          "orders": 7
+        }
+      ],
+      "asks": [
+        {
+          "price": 98.94,
+          "quantity": 29721,
+          "orders": 101
+        },
+        {
+          "price": 99,
+          "quantity": 20804,
+          "orders": 51
+        },
+        {
+          "price": 99.06,
+          "quantity": 13374,
+          "orders": 21
+        },
+        {
+          "price": 99.15,
+          "quantity": 7133,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE752E08791",
@@ -8089,8 +9193,8 @@
     "issuerName": "Power Grid Corporation of India Ltd",
     "issuerType": "PSU",
     "instrumentType": "Bond",
-    "bidPrice": 98.67,
-    "askPrice": 98.73,
+    "bidPrice": 98.65,
+    "askPrice": 98.75,
     "lastTradedPrice": 98.7,
     "dayChangePercent": 0.07,
     "ytm": 7.38,
@@ -8275,7 +9379,53 @@
         "yield": 7.38
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 98.65,
+          "quantity": 24951,
+          "orders": 78
+        },
+        {
+          "price": 98.57,
+          "quantity": 17466,
+          "orders": 39
+        },
+        {
+          "price": 98.49,
+          "quantity": 11228,
+          "orders": 16
+        },
+        {
+          "price": 98.38,
+          "quantity": 5988,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 98.75,
+          "quantity": 28137,
+          "orders": 88
+        },
+        {
+          "price": 98.83,
+          "quantity": 19696,
+          "orders": 44
+        },
+        {
+          "price": 98.91,
+          "quantity": 12661,
+          "orders": 18
+        },
+        {
+          "price": 99.02,
+          "quantity": 6753,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE752E08809",
@@ -8283,8 +9433,8 @@
     "issuerName": "Power Grid Corporation of India Ltd",
     "issuerType": "PSU",
     "instrumentType": "Bond",
-    "bidPrice": 98.47,
-    "askPrice": 98.53,
+    "bidPrice": 98.45,
+    "askPrice": 98.55,
     "lastTradedPrice": 98.5,
     "dayChangePercent": 0.07,
     "ytm": 7.52,
@@ -8472,7 +9622,53 @@
         "yield": 7.52
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 98.45,
+          "quantity": 27762,
+          "orders": 90
+        },
+        {
+          "price": 98.37,
+          "quantity": 19434,
+          "orders": 45
+        },
+        {
+          "price": 98.29,
+          "quantity": 12493,
+          "orders": 19
+        },
+        {
+          "price": 98.18,
+          "quantity": 6663,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 98.55,
+          "quantity": 24620,
+          "orders": 80
+        },
+        {
+          "price": 98.63,
+          "quantity": 17234,
+          "orders": 40
+        },
+        {
+          "price": 98.71,
+          "quantity": 11079,
+          "orders": 16
+        },
+        {
+          "price": 98.82,
+          "quantity": 5909,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE0Z8Z07016",
@@ -8480,8 +9676,8 @@
     "issuerName": "Capital Infra Trust",
     "issuerType": "Infrastructure Trust",
     "instrumentType": "InvIT Debt",
-    "bidPrice": 99.37,
-    "askPrice": 99.43,
+    "bidPrice": 99.36,
+    "askPrice": 99.44,
     "lastTradedPrice": 99.4,
     "dayChangePercent": 0.04,
     "ytm": 8.25,
@@ -8658,7 +9854,53 @@
         "yield": 8.25
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.36,
+          "quantity": 28980,
+          "orders": 96
+        },
+        {
+          "price": 99.29,
+          "quantity": 20286,
+          "orders": 49
+        },
+        {
+          "price": 99.22,
+          "quantity": 13041,
+          "orders": 20
+        },
+        {
+          "price": 99.12,
+          "quantity": 6955,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.44,
+          "quantity": 26750,
+          "orders": 89
+        },
+        {
+          "price": 99.51,
+          "quantity": 18725,
+          "orders": 45
+        },
+        {
+          "price": 99.58,
+          "quantity": 12038,
+          "orders": 18
+        },
+        {
+          "price": 99.68,
+          "quantity": 6420,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE0Z8Z07024",
@@ -8666,8 +9908,8 @@
     "issuerName": "Capital Infra Trust",
     "issuerType": "Infrastructure Trust",
     "instrumentType": "InvIT Debt",
-    "bidPrice": 99.17,
-    "askPrice": 99.23,
+    "bidPrice": 99.16,
+    "askPrice": 99.24,
     "lastTradedPrice": 99.2,
     "dayChangePercent": 0.07,
     "ytm": 8.48,
@@ -8848,7 +10090,53 @@
         "yield": 8.48
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": 99.16,
+          "quantity": 34630,
+          "orders": 115
+        },
+        {
+          "price": 99.09,
+          "quantity": 24241,
+          "orders": 58
+        },
+        {
+          "price": 99.02,
+          "quantity": 15584,
+          "orders": 24
+        },
+        {
+          "price": 98.92,
+          "quantity": 8311,
+          "orders": 7
+        }
+      ],
+      "asks": [
+        {
+          "price": 99.24,
+          "quantity": 29500,
+          "orders": 98
+        },
+        {
+          "price": 99.31,
+          "quantity": 20650,
+          "orders": 49
+        },
+        {
+          "price": 99.38,
+          "quantity": 13275,
+          "orders": 20
+        },
+        {
+          "price": 99.48,
+          "quantity": 7080,
+          "orders": 6
+        }
+      ]
+    }
   },
   {
     "isin": "INE528G08352",
@@ -8856,12 +10144,12 @@
     "issuerName": "Yes Bank Ltd",
     "issuerType": "Bank",
     "instrumentType": "NCD",
-    "bidPrice": -0.02,
-    "askPrice": 0.04,
+    "bidPrice": -0.03,
+    "askPrice": 0.05,
     "lastTradedPrice": 0.01,
     "dayChangePercent": 0.08,
     "ytm": 0,
-    "currentYield": 95000.0,
+    "currentYield": 95000,
     "couponRate": 9.5,
     "couponType": "Fixed",
     "couponFrequency": "Semi-Annual",
@@ -8998,7 +10286,7 @@
       },
       {
         "date": "2026-08-14",
-        "price": -0.0,
+        "price": 0,
         "yield": 0.0052
       },
       {
@@ -9027,7 +10315,53 @@
         "yield": 0
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": -0.03,
+          "quantity": 32589,
+          "orders": 110
+        },
+        {
+          "price": -0.09,
+          "quantity": 22812,
+          "orders": 55
+        },
+        {
+          "price": -0.15,
+          "quantity": 14665,
+          "orders": 23
+        },
+        {
+          "price": -0.24,
+          "quantity": 7821,
+          "orders": 7
+        }
+      ],
+      "asks": [
+        {
+          "price": 0.05,
+          "quantity": 32589,
+          "orders": 110
+        },
+        {
+          "price": 0.11,
+          "quantity": 22812,
+          "orders": 55
+        },
+        {
+          "price": 0.17,
+          "quantity": 14665,
+          "orders": 23
+        },
+        {
+          "price": 0.26,
+          "quantity": 7821,
+          "orders": 7
+        }
+      ]
+    }
   },
   {
     "isin": "INE528G08394",
@@ -9035,13 +10369,13 @@
     "issuerName": "Yes Bank Ltd",
     "issuerType": "Bank",
     "instrumentType": "NCD",
-    "bidPrice": -0.02,
-    "askPrice": 0.04,
+    "bidPrice": -0.05,
+    "askPrice": 0.07,
     "lastTradedPrice": 0.01,
     "dayChangePercent": -0.07,
     "ytm": 0,
-    "currentYield": 90000.0,
-    "couponRate": 9.0,
+    "currentYield": 90000,
+    "couponRate": 9,
     "couponType": "Fixed",
     "couponFrequency": "Semi-Annual",
     "floatingBenchmark": null,
@@ -9179,7 +10513,7 @@
       },
       {
         "date": "2026-08-14",
-        "price": -0.0,
+        "price": 0,
         "yield": 0.0052
       },
       {
@@ -9208,6 +10542,52 @@
         "yield": 0
       }
     ],
-    "indentureDocUrl": "#"
+    "indentureDocUrl": "#",
+    "marketDepth": {
+      "bids": [
+        {
+          "price": -0.05,
+          "quantity": 24180,
+          "orders": 72
+        },
+        {
+          "price": -0.14,
+          "quantity": 16926,
+          "orders": 36
+        },
+        {
+          "price": -0.24,
+          "quantity": 10881,
+          "orders": 15
+        },
+        {
+          "price": -0.38,
+          "quantity": 5803,
+          "orders": 6
+        }
+      ],
+      "asks": [
+        {
+          "price": 0.07,
+          "quantity": 24180,
+          "orders": 72
+        },
+        {
+          "price": 0.16,
+          "quantity": 16926,
+          "orders": 36
+        },
+        {
+          "price": 0.26,
+          "quantity": 10881,
+          "orders": 15
+        },
+        {
+          "price": 0.4,
+          "quantity": 5803,
+          "orders": 6
+        }
+      ]
+    }
   }
 ]

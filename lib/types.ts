@@ -36,6 +36,17 @@ export type PricePoint = {
   yield: number;
 };
 
+export type MarketDepthLevel = {
+  price: number;
+  quantity: number;
+  orders: number;
+};
+
+export type MarketDepth = {
+  bids: MarketDepthLevel[];
+  asks: MarketDepthLevel[];
+};
+
 export type Bond = {
   isin: string;
   ticker: string;
@@ -44,6 +55,7 @@ export type Bond = {
   instrumentType: InstrumentType;
   bidPrice: number;
   askPrice: number;
+  marketDepth: MarketDepth;
   lastTradedPrice: number;
   dayChangePercent: number;
   ytm: number;

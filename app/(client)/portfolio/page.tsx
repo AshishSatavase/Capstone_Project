@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
+import { X } from "lucide-react";
 import {
   getPortfolio,
   getBondByISIN,
@@ -15,6 +17,7 @@ import {
 import { getBonds } from "@/lib/data";
 import { SectionHeader, DataTable, Card, type DataTableColumn } from "@/components/ui";
 import { AppAreaChart, AppDonutChart, type DonutSlice, type ChartPoint } from "@/components/charts";
+import { OrderTicket } from "@/components/orders/OrderTicket";
 import type { Holding, CostingMethod } from "@/lib/types";
 
 export default function PortfolioPage() {
@@ -29,11 +32,19 @@ export default function PortfolioPage() {
   // ytm min/max removed from UI but keep state for backwards compatibility
   const [ytmMin, setYtmMin] = useState<number | "">("");
   const [ytmMax, setYtmMax] = useState<number | "">("");
+  const [selectedHolding, setSelectedHolding] = useState<Holding | null>(null);
+  const [orderTicketOpen, setOrderTicketOpen] = useState(false);
+  const [orderSide, setOrderSide] = useState<"Buy" | "Sell">("Buy");
+  const [orderBond, setOrderBond] = useState<ReturnType<typeof getBondByISIN> | null>(null);
   
   const allBonds = getBonds();
   const uniqueInstrumentTypes = ["All", ...Array.from(new Set(allBonds.map((b) => b.instrumentType)))];
   const uniqueRatings = ["All", ...Array.from(new Set(allBonds.map((b) => b.creditRating)))];
   const uniqueSectors = ["All", ...Array.from(new Set(allBonds.map((b) => b.sector)))];
+  const invalidPortfolioIsins = useMemo(
+    () => portfolio?.holdings.filter((h) => !getBondByISIN(h.isin)).map((h) => h.isin) ?? [],
+    [portfolio]
+  );
 
   if (!portfolio) {
     return (
@@ -129,7 +140,13 @@ export default function PortfolioPage() {
         const bond = getBondByISIN(h.isin);
         return (
           <div>
-            <div className="font-semibold">{bond?.ticker ?? h.isin}</div>
+            <Link
+              href={`/instrument/${h.isin}`}
+              onClick={(event) => event.stopPropagation()}
+              className="font-semibold text-ubs-red hover:underline"
+            >
+              {bond?.ticker ?? h.isin}
+            </Link>
             <div className="text-2xs text-muted">{bond?.issuerName || "—"}</div>
           </div>
         );
@@ -137,87 +154,11 @@ export default function PortfolioPage() {
       sortValue: (h) => h.isin,
     },
     {
-      id: "instrumentType",
-      header: "Instrument",
-      accessor: (h) => getBondByISIN(h.isin)?.instrumentType ?? "—",
-      sortValue: (h) => getBondByISIN(h.isin)?.instrumentType ?? "",
-    },
-    {
-      id: "faceValue",
-      header: "Face Value",
-      align: "right",
-      accessor: (h) => `${getBondByISIN(h.isin)?.faceValue ?? 100}`,
-      sortValue: (h) => getBondByISIN(h.isin)?.faceValue ?? 100,
-    },
-    {
       id: "quantity",
       header: "Quantity",
       align: "right",
       accessor: (h) => h.quantity.toLocaleString(),
       sortValue: (h) => h.quantity,
-    },
-    {
-      id: "cleanPrice",
-      header: "Clean Price",
-      align: "right",
-      accessor: (h) => {
-        const bond = getBondByISIN(h.isin);
-        if (!bond) return "—";
-        return `${bond.lastTradedPrice.toFixed(2)}`;
-      },
-      sortValue: (h) => {
-        const bond = getBondByISIN(h.isin);
-        return bond?.lastTradedPrice ?? 0;
-      },
-    },
-    {
-      id: "accrued",
-      header: "Accrued Interest",
-      align: "right",
-      accessor: (h) => {
-        const bond = getBondByISIN(h.isin);
-        if (!bond || !bond.accruedInterestApplicable) return "—";
-        const aiPerUnit = bond.accruedInterestAmount * (bond.faceValue / 100);
-        return `₹${aiPerUnit.toFixed(2)}`;
-      },
-      sortValue: (h) => {
-        const bond = getBondByISIN(h.isin);
-        return bond && bond.accruedInterestApplicable
-          ? bond.accruedInterestAmount * (bond.faceValue / 100)
-          : 0;
-      },
-    },
-    {
-      id: "ytm",
-      header: "YTM",
-      align: "right",
-      accessor: (h) => {
-        const bond = getBondByISIN(h.isin);
-        return bond ? `${bond.ytm.toFixed(2)}%` : "—";
-      },
-      sortValue: (h) => getBondByISIN(h.isin)?.ytm ?? 0,
-    },
-    {
-      id: "coupon",
-      header: "Coupon",
-      align: "right",
-      accessor: (h) => {
-        const bond = getBondByISIN(h.isin);
-        return bond ? `${bond.couponRate.toFixed(2)}%` : "—";
-      },
-      sortValue: (h) => getBondByISIN(h.isin)?.couponRate ?? 0,
-    },
-    {
-      id: "maturity",
-      header: "Maturity",
-      accessor: (h) => getBondByISIN(h.isin)?.redemptionDate ?? "—",
-      sortValue: (h) => getBondByISIN(h.isin)?.redemptionDate ?? "",
-    },
-    {
-      id: "rating",
-      header: "Rating",
-      accessor: (h) => getBondByISIN(h.isin)?.creditRating ?? "—",
-      sortValue: (h) => getBondByISIN(h.isin)?.creditRating ?? "",
     },
     {
       id: "marketValue",
@@ -352,6 +293,11 @@ export default function PortfolioPage() {
     }
     return rows.sort((a, b) => a.days - b.days).slice(0, 7);
   }, [filteredHoldings]);
+  const selectedBond = selectedHolding ? getBondByISIN(selectedHolding.isin) : null;
+  const selectedHoldingMarketValue = selectedHolding && selectedBond
+    ? selectedBond.lastTradedPrice * (selectedBond.faceValue / 100) * selectedHolding.quantity
+    : 0;
+  const selectedHoldingMtm = selectedHolding && selectedBond ? getHoldingMTM(selectedHolding, selectedBond) : null;
 
   return (
     <div className="space-y-6 p-6">
@@ -481,13 +427,125 @@ export default function PortfolioPage() {
       {/* Holdings Table */}
       <div>
         <div className="mb-4 text-sm text-muted">{filteredHoldings.length} holding(s) (filtered)</div>
+        {invalidPortfolioIsins.length > 0 && (
+          <div className="mb-3 rounded border border-ubs-red bg-ubs-red/5 px-3 py-2 text-2xs text-ubs-red">
+            Data warning: {invalidPortfolioIsins.length} holding(s) have ISIN not found in bond master:
+            {" "}
+            {invalidPortfolioIsins.join(", ")}
+          </div>
+        )}
         <DataTable
           columns={holdingsColumns}
           data={filteredHoldings}
           rowKey={(h) => h.isin}
           searchable={false}
+          onRowClick={(holding) => setSelectedHolding(holding)}
         />
       </div>
+
+      {selectedHolding && selectedBond && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+          onClick={() => setSelectedHolding(null)}
+          role="presentation"
+        >
+          <div
+            className="w-full max-w-xl rounded-lg border border-border bg-white shadow-lg"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="flex items-start justify-between border-b border-border px-5 py-4">
+              <div>
+                <Link
+                  href={`/instrument/${selectedBond.isin}`}
+                  className="text-lg font-bold text-ubs-red hover:underline"
+                  onClick={() => setSelectedHolding(null)}
+                >
+                  {selectedBond.ticker}
+                </Link>
+                <p className="mt-1 text-sm text-muted">{selectedBond.issuerName}</p>
+                <p className="text-2xs text-muted">ISIN: {selectedBond.isin}</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelectedHolding(null)}
+                className="inline-flex h-8 w-8 items-center justify-center rounded border border-border text-ink hover:bg-faint/5"
+                aria-label="Close"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-3 px-5 py-4 text-sm">
+              <div>
+                <p className="text-2xs text-muted">Quantity</p>
+                <p className="font-semibold text-ink">{selectedHolding.quantity.toLocaleString()}</p>
+              </div>
+              <div>
+                <p className="text-2xs text-muted">Price</p>
+                <p className="font-semibold text-ink">{selectedBond.lastTradedPrice.toFixed(2)}</p>
+              </div>
+              <div>
+                <p className="text-2xs text-muted">YTM</p>
+                <p className="font-semibold text-ink">{selectedBond.ytm.toFixed(2)}%</p>
+              </div>
+              <div>
+                <p className="text-2xs text-muted">Rating</p>
+                <p className="font-semibold text-ink">{selectedBond.creditRating}</p>
+              </div>
+              <div>
+                <p className="text-2xs text-muted">Market Value</p>
+                <p className="font-semibold text-ink">
+                  ₹{Math.round(selectedHoldingMarketValue).toLocaleString("en-IN")}
+                </p>
+              </div>
+              <div>
+                <p className="text-2xs text-muted">MTM P&L</p>
+                <p className={`font-semibold ${selectedHoldingMtm && selectedHoldingMtm.mtmTotal >= 0 ? "text-positive" : "text-ubs-red"}`}>
+                  {selectedHoldingMtm && selectedHoldingMtm.mtmTotal >= 0 ? "+" : ""}
+                  {Math.round(selectedHoldingMtm?.mtmTotal ?? 0).toLocaleString("en-IN")}
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-2 border-t border-border px-5 py-4">
+              <button
+                type="button"
+                className="h-11 flex-1 rounded border border-border text-sm font-semibold text-ubs-red hover:bg-ubs-red/5"
+                onClick={() => {
+                  setOrderBond(selectedBond);
+                  setOrderSide("Sell");
+                  setSelectedHolding(null);
+                  setOrderTicketOpen(true);
+                }}
+              >
+                Sell
+              </button>
+              <button
+                type="button"
+                className="h-11 flex-1 rounded bg-positive text-sm font-semibold text-white hover:opacity-90"
+                onClick={() => {
+                  setOrderBond(selectedBond);
+                  setOrderSide("Buy");
+                  setSelectedHolding(null);
+                  setOrderTicketOpen(true);
+                }}
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {orderBond && (
+        <OrderTicket
+          bond={orderBond}
+          open={orderTicketOpen}
+          initialSide={orderSide}
+          onClose={() => {
+            setOrderTicketOpen(false);
+            setOrderBond(null);
+          }}
+        />
+      )}
 
       {/* Charts Grid */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
