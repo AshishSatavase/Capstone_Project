@@ -738,6 +738,16 @@ function InstrumentPageContent({
           >
             Buy
           </Button>
+          <Button
+            variant="secondary"
+            className="h-12 min-w-32 text-base font-semibold"
+            onClick={() => {
+              setOrderSide("Buy");
+              setOrderOpen(true);
+            }}
+          >
+            RFQ
+          </Button>
         </div>
       </div>
 

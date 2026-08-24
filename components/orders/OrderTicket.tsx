@@ -14,13 +14,28 @@ type OrderTicketProps = {
   onSubmit?: (order: any) => void;
 };
 
+type OrderCategory = "time" | "money";
+type OrderType =
+  | "Market"
+  | "Limit"
+  | "Stop-Loss"
+  | "Yield"
+  | "Spread"
+  | "Day"
+  | "IOC"
+  | "FOK"
+  | "GTD"
+  | "GTC";
+
 export function OrderTicket({ bond, open, initialSide = "Buy", onClose, onSubmit }: OrderTicketProps) {
   const [side, setSide] = useState<"Buy" | "Sell">(initialSide);
-  const [orderType, setOrderType] = useState<"Market" | "Limit" | "Stop-Loss" | "GTD" | "GTC">("Market");
+  const [orderCategory, setOrderCategory] = useState<OrderCategory>("time");
+  const [orderType, setOrderType] = useState<OrderType>("Day");
   const [quantity, setQuantity] = useState("");
   const [disclosedQty, setDisclosedQty] = useState("");
   const [limitPrice, setLimitPrice] = useState("");
   const [triggerPrice, setTriggerPrice] = useState("");
+  const [expiryDate, setExpiryDate] = useState("");
 
   useEffect(() => {
     if (open) {
@@ -83,18 +98,50 @@ export function OrderTicket({ bond, open, initialSide = "Buy", onClose, onSubmit
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div>
               <label className="block text-2xs font-semibold uppercase tracking-label text-muted mb-2">
-                Order Type
+                Order options
               </label>
+              <div className="mb-2 grid grid-cols-2 gap-1 rounded border border-border bg-faint/5 p-1">
+                {([
+                  ["time", "Time-based"],
+                  ["money", "Money-based"],
+                ] as const).map(([category, label]) => (
+                  <button
+                    key={category}
+                    type="button"
+                    onClick={() => {
+                      setOrderCategory(category);
+                      setOrderType(category === "time" ? "Day" : "Limit");
+                    }}
+                    className={`rounded px-2 py-1.5 text-2xs font-semibold uppercase tracking-label transition-colors ${
+                      orderCategory === category ? "bg-white text-ink shadow-sm" : "text-muted hover:text-ink"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
               <select
                 value={orderType}
-                onChange={(e) => setOrderType(e.target.value as "Market" | "Limit" | "Stop-Loss" | "GTD" | "GTC")}
+                onChange={(e) => setOrderType(e.target.value as OrderType)}
                 className="w-full rounded border border-border px-3 py-2 text-sm text-ink placeholder-muted focus:border-ubs-red focus:outline-none"
               >
-                <option>Market</option>
-                <option>Limit</option>
-                <option>Stop-Loss</option>
-                <option>GTD</option>
-                <option>GTC</option>
+                {orderCategory === "time" ? (
+                  <>
+                    <option>Day</option>
+                    <option>IOC</option>
+                    <option>FOK</option>
+                    <option>GTD</option>
+                    <option>GTC</option>
+                  </>
+                ) : (
+                  <>
+                    <option>Market</option>
+                    <option>Limit</option>
+                    <option>Stop-Loss</option>
+                    <option>Yield</option>
+                    <option>Spread</option>
+                  </>
+                )}
               </select>
             </div>
 
@@ -157,7 +204,20 @@ export function OrderTicket({ bond, open, initialSide = "Buy", onClose, onSubmit
                 />
               </div>
             )}
-            {orderType !== "Limit" && orderType !== "Stop-Loss" && <div />}
+            {orderType === "GTD" && (
+              <div>
+                <label className="block text-2xs font-semibold uppercase tracking-label text-muted mb-2">
+                  Good till date
+                </label>
+                <input
+                  type="date"
+                  value={expiryDate}
+                  onChange={(e) => setExpiryDate(e.target.value)}
+                  className="w-full rounded border border-border px-3 py-2 text-sm text-ink placeholder-muted focus:border-ubs-red focus:outline-none"
+                />
+              </div>
+            )}
+            {orderType !== "Limit" && orderType !== "Stop-Loss" && orderType !== "GTD" && <div />}
           </div>
 
           <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -228,6 +288,13 @@ export function OrderTicket({ bond, open, initialSide = "Buy", onClose, onSubmit
         <div className="flex gap-2 border-t border-border px-5 py-4 sm:px-6">
           <Button variant="outline" className="h-11 flex-1" onClick={onClose}>
             Cancel
+          </Button>
+          <Button
+            variant="secondary"
+            className="h-11 flex-1"
+            onClick={() => onClose()}
+          >
+            RFQ
           </Button>
           <Button
             variant={side === "Buy" ? "buy" : "sell"}

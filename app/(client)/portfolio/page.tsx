@@ -530,6 +530,18 @@ export default function PortfolioPage() {
               >
                 Buy
               </button>
+              <button
+                type="button"
+                className="h-11 flex-1 rounded border border-ink text-sm font-semibold text-ink hover:bg-black/[0.04]"
+                onClick={() => {
+                  setOrderBond(selectedBond);
+                  setOrderSide("Buy");
+                  setSelectedHolding(null);
+                  setOrderTicketOpen(true);
+                }}
+              >
+                RFQ
+              </button>
             </div>
           </div>
         </div>
